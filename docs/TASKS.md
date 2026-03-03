@@ -24,7 +24,7 @@ Danh sách công việc theo giai đoạn để triển khai website Thành Nam 
   - [x] `/dich-vu` và từng trang con (`son-xe-o-to`, `bao-duong-dinh-ky`, `sua-chua-may-gam`)
   - [x] `/tin-tuc` (listing) và từng bài chi tiết (`/tin-tuc/[slug]`)
   - [ ] `/hinh-anh-thuc-te`, `/lien-he`
-- [ ] Thêm **LocalBusiness JSON-LD** cho trang chủ (`/`) theo mô tả trong `docs/tech-strategy.md`.
+- [x] Thêm **LocalBusiness JSON-LD** cho trang chủ (`/`) theo mô tả trong `docs/tech-strategy.md`. (`app/components/LocalBusinessJsonLd.tsx`, type `AutoRepair`)
 - [x] Triển khai **SSG** cho các trang dịch vụ chính (mặc định với Next.js App Router Server Components):
   - [x] `/dich-vu`
   - [x] `/dich-vu/son-xe-o-to`

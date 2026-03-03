@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import { ScrollReveal } from "./components/ScrollReveal"
+import { LocalBusinessJsonLd } from "./components/LocalBusinessJsonLd"
 
 export const metadata: Metadata = {
   title: "Gara Thành Nam Oto | Sửa chữa & Sơn xe uy tín Xuân Lộc",
@@ -117,6 +118,7 @@ const STATS = [
 export default function Home2Page() {
   return (
     <>
+      <LocalBusinessJsonLd />
       {/* Scoped keyframe animations for the hero entrance */}
       <style>{`
         @keyframes h2-rise {
