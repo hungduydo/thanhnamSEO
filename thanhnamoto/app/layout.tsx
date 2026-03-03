@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Barlow_Condensed } from "next/font/google";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
@@ -13,6 +13,13 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const barlowCondensed = Barlow_Condensed({
+  variable: "--font-display",
+  subsets: ["latin", "vietnamese"],
+  weight: ["600", "700", "800", "900"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -29,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="vi">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${barlowCondensed.variable} antialiased`}
       >
         <div className="min-h-screen bg-[radial-gradient(circle_at_top,_#020617,_#020617_45%,_#000_100%)] text-slate-50">
           <header className="sticky top-0 z-40 border-b border-white/5 bg-black/40 backdrop-blur">
@@ -71,7 +78,7 @@ export default function RootLayout({
                   Liên hệ
                 </a>
                 <a
-                  href="tel:0988000000"
+                  href="tel:0388476247"
                   className="inline-flex items-center gap-2 rounded-full bg-amber-400 px-4 py-2 text-sm font-semibold text-slate-950 shadow-[0_12px_30px_rgba(0,0,0,0.8)] hover:bg-amber-300"
                 >
                   📞 Gọi ngay
@@ -80,7 +87,7 @@ export default function RootLayout({
 
               <div className="flex items-center gap-2 md:hidden">
                 <a
-                  href="tel:0988000000"
+                  href="tel:0388476247"
                   className="inline-flex items-center gap-1 rounded-full bg-amber-400 px-3 py-1.5 text-xs font-semibold text-slate-950 shadow-[0_10px_24px_rgba(0,0,0,0.85)]"
                 >
                   📞 Gọi ngay
@@ -106,8 +113,8 @@ export default function RootLayout({
                 </p>
               </div>
               <div className="space-y-1">
-                <p>Địa chỉ: [Điền địa chỉ gara thực tế]</p>
-                <p>Điện thoại: 0988 xxx xxx</p>
+                <p>Địa chỉ: Trần Nhân Tông, Khu Phố 8, Xuân Lộc, Đồng Nai</p>
+                <p>Điện thoại: 0388 476 247</p>
                 <p>Giờ làm việc: 08:00 – 17:30 (Thứ 2 – Chủ nhật)</p>
               </div>
               <div className="space-y-2">
@@ -134,7 +141,7 @@ export default function RootLayout({
           </footer>
 
           <a
-            href="tel:0988000000"
+            href="tel:0388476247"
             className="fixed bottom-4 right-4 z-50 inline-flex items-center gap-2 rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-slate-950 shadow-[0_16px_40px_rgba(0,0,0,0.95)] ring-2 ring-emerald-300/60 md:hidden"
           >
             📞 Gọi gara

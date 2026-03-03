@@ -118,7 +118,7 @@ module.exports = nextConfig;
   - Tên gara, địa chỉ, số điện thoại, giờ mở cửa, toạ độ (geo).
 - Đặt script JSON-LD này ở **trang chủ** (`/`).
 
-Ví dụ phác thảo (cần chỉnh lại thông tin thật trước khi dùng):
+Ví dụ phác thảo (đã điền sẵn thông tin doanh nghiệp hiện tại, có thể chỉnh sửa nếu thay đổi):
 
 ```json
 {
@@ -128,17 +128,17 @@ Ví dụ phác thảo (cần chỉnh lại thông tin thật trước khi dùng)
   "image": "https://thanhnamoto.com/hinh-anh-thuc-te/garage.jpg",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Địa chỉ cụ thể",
+    "streetAddress": "Trần Nhân Tông, Khu Phố 8",
     "addressLocality": "Xuân Lộc",
     "addressRegion": "Đồng Nai",
     "addressCountry": "VN"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 0,
-    "longitude": 0
+    "latitude": 10.918214879920205,
+    "longitude": 107.40338518778738
   },
-  "telephone": "+84-xxx-xxx-xxx",
+  "telephone": "+84-388-476-247",
   "openingHours": "Mo-Su 08:00-17:30"
 }
 ```
