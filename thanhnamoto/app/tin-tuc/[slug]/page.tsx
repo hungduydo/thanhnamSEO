@@ -10,13 +10,33 @@ export async function generateStaticParams() {
   return getArticleSlugs().map((slug) => ({ slug }))
 }
 
+const SITE_URL = "https://thanhnamoto.com"
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const article = getArticle(slug)
   if (!article) return {}
+  const url = `${SITE_URL}/tin-tuc/${slug}`
   return {
     title: `${article.title} | Thành Nam Oto`,
     description: article.description,
+    openGraph: {
+      type: "article",
+      title: article.title,
+      description: article.description,
+      url,
+      siteName: "Thành Nam Oto",
+      locale: "vi_VN",
+      publishedTime: article.date,
+      authors: ["Thành Nam Oto"],
+      images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: article.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.description,
+      images: ["/og-default.jpg"],
+    },
   }
 }
 
@@ -89,8 +109,26 @@ export default async function ArticlePage({ params }: Props) {
 
   const cat = CATEGORY_STYLES[article.categoryColor]
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.description,
+    datePublished: article.date,
+    dateModified: article.date,
+    inLanguage: "vi",
+    url: `${SITE_URL}/tin-tuc/${article.slug}`,
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/tin-tuc/${article.slug}` },
+    author: { "@type": "Organization", name: "Thành Nam Oto", url: SITE_URL },
+    publisher: { "@type": "Organization", name: "Thành Nam Oto", url: SITE_URL },
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <style>{`
         @keyframes ar-rise {
           from { opacity: 0; transform: translateY(20px); }

@@ -22,10 +22,37 @@ const barlowCondensed = Barlow_Condensed({
   display: "swap",
 });
 
+const SITE_URL = "https://thanhnamoto.com";
+const DEFAULT_TITLE = "Gara sửa chữa & chăm sóc ô tô | Thành Nam Oto Xuân Lộc";
+const DEFAULT_DESC =
+  "Gara sửa chữa, sơn xe và bảo dưỡng định kỳ cho xe ô tô cá nhân tại Xuân Lộc, Đồng Nai. Báo giá rõ ràng, không phát sinh, có bảo hành bằng văn bản.";
+
 export const metadata: Metadata = {
-  title: "Gara sửa chữa & chăm sóc ô tô | Thành Nam Oto Xuân Lộc",
-  description:
-    "Gara sửa chữa, sơn xe và bảo dưỡng định kỳ cho xe ô tô cá nhân tại Xuân Lộc, Đồng Nai. Báo giá rõ ràng, không phát sinh, có bảo hành bằng văn bản.",
+  metadataBase: new URL(SITE_URL),
+  title: DEFAULT_TITLE,
+  description: DEFAULT_DESC,
+  openGraph: {
+    siteName: "Thành Nam Oto",
+    locale: "vi_VN",
+    type: "website",
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESC,
+    url: SITE_URL,
+    images: [
+      {
+        url: "/og-default.jpg", // TODO: replace with a real 1200×630 OG image
+        width: 1200,
+        height: 630,
+        alt: "Thành Nam Oto — Gara sửa chữa & chăm sóc ô tô Xuân Lộc",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESC,
+    images: ["/og-default.jpg"],
+  },
 };
 
 export default function RootLayout({
