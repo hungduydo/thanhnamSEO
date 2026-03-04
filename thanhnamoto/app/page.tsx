@@ -663,7 +663,7 @@ export default function Home2Page() {
         {/* ══════════════════════════════════════════════
             § 6  SOCIAL PROOF — GALLERY
         ══════════════════════════════════════════════ */}
-        <section className="relative overflow-hidden py-20 px-4 md:py-28 md:px-12 lg:px-20">
+        <section id="thu-vien" className="relative overflow-hidden py-20 px-4 md:py-28 md:px-12 lg:px-20">
           <div
             className="pointer-events-none absolute left-0 right-0 top-0 h-px"
             style={{
@@ -745,6 +745,16 @@ export default function Home2Page() {
                 </ScrollReveal>
               ))}
             </div>
+            <ScrollReveal delay={200}>
+              <div className="mt-8 text-center">
+                <a
+                  href="/hinh-anh-thuc-te#thu-vien"
+                  className="inline-flex items-center gap-2 rounded-full border border-sky-400/40 px-6 py-2.5 text-sm font-semibold text-sky-400 transition-all hover:border-sky-400 hover:bg-sky-400/10"
+                >
+                  Xem toàn bộ thư viện ảnh →
+                </a>
+              </div>
+            </ScrollReveal>
           </div>
         </section>
 
@@ -885,7 +895,7 @@ export default function Home2Page() {
         </section>
 
         {/* ══════════════════════════════════════════════
-            § 8  FINAL CTA — BOOKING
+            § 9  FINAL CTA — BOOKING
         ══════════════════════════════════════════════ */}
         <section
           id="dat-lich"
