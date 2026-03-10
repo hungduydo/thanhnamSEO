@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Dịch vụ sửa chữa & chăm sóc ô tô | Thành Nam Oto Xuân Lộc",
   description:
     "Sửa chữa, sơn xe và bảo dưỡng định kỳ cho xe ô tô cá nhân tại Xuân Lộc, Đồng Nai. Báo giá rõ ràng, không phát sinh, có bảo hành bằng văn bản.",
+  alternates: { canonical: "/dich-vu" },
 }
 
 const SERVICES = [
@@ -85,11 +86,11 @@ export default function DichVuPage() {
 
           {/* Diagonal amber slash */}
           <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
-            <div style={{ position:"absolute", width:"140%", height:"2px", top:"55%", left:"-20%", transform:"rotate(-7deg)", background:"linear-gradient(90deg, transparent, rgba(245,158,11,0.5) 40%, rgba(245,158,11,0.85) 50%, rgba(245,158,11,0.5) 60%, transparent)", boxShadow:"0 0 60px 20px rgba(245,158,11,0.06)" }} />
+            <div style={{ position: "absolute", width: "140%", height: "2px", top: "55%", left: "-20%", transform: "rotate(-7deg)", background: "linear-gradient(90deg, transparent, rgba(245,158,11,0.5) 40%, rgba(245,158,11,0.85) 50%, rgba(245,158,11,0.5) 60%, transparent)", boxShadow: "0 0 60px 20px rgba(245,158,11,0.06)" }} />
           </div>
 
           {/* Watermark */}
-          <span className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 select-none font-[family-name:var(--font-display)] font-black leading-none text-white/[0.022]" style={{ fontSize:"clamp(150px,22vw,320px)" }} aria-hidden>DV</span>
+          <span className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 select-none font-[family-name:var(--font-display)] font-black leading-none text-white/[0.022]" style={{ fontSize: "clamp(150px,22vw,320px)" }} aria-hidden>DV</span>
 
           <div className="relative z-10 mx-auto w-full max-w-6xl">
             <div className="dv-k0 mb-5 flex items-center gap-3">
@@ -124,7 +125,7 @@ export default function DichVuPage() {
 
         {/* ── SERVICES GRID ── */}
         <section className="relative overflow-hidden py-16 px-4 md:py-24 md:px-12 lg:px-20">
-          <div className="pointer-events-none absolute left-0 right-0 top-0 h-px" style={{ background:"linear-gradient(90deg, transparent, rgba(245,158,11,0.4) 50%, transparent)" }} aria-hidden />
+          <div className="pointer-events-none absolute left-0 right-0 top-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(245,158,11,0.4) 50%, transparent)" }} aria-hidden />
 
           <div className="mx-auto max-w-6xl">
             <ScrollReveal>
@@ -187,7 +188,7 @@ export default function DichVuPage() {
 
         {/* ── COMMITMENTS ── */}
         <section className="relative overflow-hidden py-16 px-4 md:py-24 md:px-12 lg:px-20">
-          <div className="pointer-events-none absolute left-0 right-0 top-0 h-px" style={{ background:"linear-gradient(90deg, transparent, rgba(245,158,11,0.3) 50%, transparent)" }} aria-hidden />
+          <div className="pointer-events-none absolute left-0 right-0 top-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(245,158,11,0.3) 50%, transparent)" }} aria-hidden />
 
           <div className="mx-auto max-w-6xl">
             <ScrollReveal>
@@ -220,8 +221,8 @@ export default function DichVuPage() {
 
         {/* ── FINAL CTA ── */}
         <section id="dat-lich" className="relative overflow-hidden py-16 px-4 md:py-24 md:px-12 lg:px-20">
-          <div className="pointer-events-none absolute inset-0" style={{ background:"linear-gradient(160deg, rgba(245,158,11,0.06) 0%, transparent 50%)" }} aria-hidden />
-          <div className="pointer-events-none absolute left-0 right-0 top-0 h-px" style={{ background:"linear-gradient(90deg, transparent, rgba(245,158,11,0.45) 50%, transparent)" }} aria-hidden />
+          <div className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(160deg, rgba(245,158,11,0.06) 0%, transparent 50%)" }} aria-hidden />
+          <div className="pointer-events-none absolute left-0 right-0 top-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(245,158,11,0.45) 50%, transparent)" }} aria-hidden />
 
           <div className="mx-auto max-w-2xl text-center">
             <ScrollReveal>

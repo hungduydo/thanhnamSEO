@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Sửa chữa máy & gầm ô tô tại Xuân Lộc | Thành Nam Oto",
   description:
     "Dịch vụ sửa chữa máy, gầm, điện ô tô tại Xuân Lộc, Đồng Nai. Máy chẩn đoán hiện đại, báo giá rõ ràng, không tự ý thay phụ tùng, có bảo hành.",
+  alternates: { canonical: "/dich-vu/sua-chua-may-gam" },
 }
 
 const ISSUES = [
@@ -51,14 +52,14 @@ export default function SuaChuaMayGamPage() {
 
           {/* Diagonal emerald slash */}
           <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
-            <div style={{ position:"absolute", width:"140%", height:"2px", top:"50%", left:"-20%", transform:"rotate(-8deg)", background:"linear-gradient(90deg, transparent, rgba(16,185,129,0.45) 40%, rgba(16,185,129,0.85) 50%, rgba(16,185,129,0.45) 60%, transparent)", boxShadow:"0 0 70px 25px rgba(16,185,129,0.06)" }} />
-            <div style={{ position:"absolute", width:"140%", height:"1px", top:"51.4%", left:"-20%", transform:"rotate(-8deg)", background:"linear-gradient(90deg, transparent, rgba(16,185,129,0.18) 40%, rgba(16,185,129,0.35) 50%, rgba(16,185,129,0.18) 60%, transparent)" }} />
+            <div style={{ position: "absolute", width: "140%", height: "2px", top: "50%", left: "-20%", transform: "rotate(-8deg)", background: "linear-gradient(90deg, transparent, rgba(16,185,129,0.45) 40%, rgba(16,185,129,0.85) 50%, rgba(16,185,129,0.45) 60%, transparent)", boxShadow: "0 0 70px 25px rgba(16,185,129,0.06)" }} />
+            <div style={{ position: "absolute", width: "140%", height: "1px", top: "51.4%", left: "-20%", transform: "rotate(-8deg)", background: "linear-gradient(90deg, transparent, rgba(16,185,129,0.18) 40%, rgba(16,185,129,0.35) 50%, rgba(16,185,129,0.18) 60%, transparent)" }} />
           </div>
 
           {/* Watermark */}
-          <span className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 select-none font-[family-name:var(--font-display)] font-black leading-none text-white/[0.022]" style={{ fontSize:"clamp(150px,22vw,320px)" }} aria-hidden>01</span>
+          <span className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 select-none font-[family-name:var(--font-display)] font-black leading-none text-white/[0.022]" style={{ fontSize: "clamp(150px,22vw,320px)" }} aria-hidden>01</span>
 
-          <div className="pointer-events-none absolute inset-0" style={{ background:"radial-gradient(ellipse 55% 40% at 20% 50%, rgba(16,185,129,0.05) 0%, transparent 70%)" }} aria-hidden />
+          <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(ellipse 55% 40% at 20% 50%, rgba(16,185,129,0.05) 0%, transparent 70%)" }} aria-hidden />
 
           <div className="relative z-10 mx-auto w-full max-w-6xl">
             {/* Breadcrumb */}
@@ -124,7 +125,7 @@ export default function SuaChuaMayGamPage() {
 
         {/* ── COMMON ISSUES ── */}
         <section className="relative overflow-hidden py-12 px-4 md:py-20 md:px-12 lg:px-20">
-          <div className="pointer-events-none absolute left-0 right-0 top-0 h-px" style={{ background:"linear-gradient(90deg, transparent, rgba(16,185,129,0.3) 50%, transparent)" }} aria-hidden />
+          <div className="pointer-events-none absolute left-0 right-0 top-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(16,185,129,0.3) 50%, transparent)" }} aria-hidden />
 
           <div className="mx-auto max-w-6xl">
             <ScrollReveal>
@@ -157,8 +158,8 @@ export default function SuaChuaMayGamPage() {
 
         {/* ── PROCESS ── */}
         <section className="relative overflow-hidden py-12 px-4 md:py-20 md:px-12 lg:px-20">
-          <div className="pointer-events-none absolute left-0 right-0 top-0 h-px" style={{ background:"linear-gradient(90deg, transparent, rgba(16,185,129,0.2) 50%, transparent)" }} aria-hidden />
-          <div className="pointer-events-none absolute inset-0" style={{ background:"radial-gradient(ellipse 70% 50% at 50% 50%, rgba(16,185,129,0.02) 0%, transparent 70%)" }} aria-hidden />
+          <div className="pointer-events-none absolute left-0 right-0 top-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(16,185,129,0.2) 50%, transparent)" }} aria-hidden />
+          <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(ellipse 70% 50% at 50% 50%, rgba(16,185,129,0.02) 0%, transparent 70%)" }} aria-hidden />
 
           <div className="relative z-10 mx-auto max-w-6xl">
             <ScrollReveal>
@@ -177,7 +178,7 @@ export default function SuaChuaMayGamPage() {
             </ScrollReveal>
 
             <div className="relative">
-              <div className="absolute left-8 right-8 top-[2rem] hidden h-px md:block" style={{ background:"linear-gradient(90deg, rgba(16,185,129,0.35), rgba(16,185,129,0.08) 50%, rgba(16,185,129,0.35))" }} aria-hidden />
+              <div className="absolute left-8 right-8 top-[2rem] hidden h-px md:block" style={{ background: "linear-gradient(90deg, rgba(16,185,129,0.35), rgba(16,185,129,0.08) 50%, rgba(16,185,129,0.35))" }} aria-hidden />
               <div className="grid gap-6 md:grid-cols-4">
                 {STEPS.map((s, i) => (
                   <ScrollReveal key={s.num} delay={i * 120}>
@@ -220,8 +221,8 @@ export default function SuaChuaMayGamPage() {
 
         {/* ── CTA ── */}
         <section id="dat-lich" className="relative overflow-hidden py-16 px-4 md:py-24 md:px-12 lg:px-20">
-          <div className="pointer-events-none absolute inset-0" style={{ background:"radial-gradient(ellipse 60% 40% at 50% 80%, rgba(16,185,129,0.05) 0%, transparent 70%)" }} aria-hidden />
-          <div className="pointer-events-none absolute left-0 right-0 top-0 h-px" style={{ background:"linear-gradient(90deg, transparent, rgba(16,185,129,0.35) 50%, transparent)" }} aria-hidden />
+          <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(ellipse 60% 40% at 50% 80%, rgba(16,185,129,0.05) 0%, transparent 70%)" }} aria-hidden />
+          <div className="pointer-events-none absolute left-0 right-0 top-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(16,185,129,0.35) 50%, transparent)" }} aria-hidden />
 
           <div className="mx-auto max-w-2xl text-center">
             <ScrollReveal>

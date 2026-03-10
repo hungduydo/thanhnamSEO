@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Liên hệ Gara Thành Nam Oto | Xuân Lộc, Đồng Nai",
+  description: "Thông tin liên hệ, địa chỉ và bản đồ dẫn đường đến Gara Thành Nam Oto tại Xuân Lộc, Đồng Nai.",
+  alternates: { canonical: "/lien-he" },
+};
+
 export default function LienHePage() {
   return (
     <main className="mx-auto flex min-h-screen max-w-3xl flex-col gap-6 px-4 py-16">

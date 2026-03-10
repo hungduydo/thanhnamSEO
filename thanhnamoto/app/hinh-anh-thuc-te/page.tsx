@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Hình ảnh thực tế tại Gara | Thành Nam Oto",
+  description: "Thư viện hình ảnh thực tế các dòng xe đã được sửa chữa và chăm sóc tại Gara Thành Nam Oto.",
+  alternates: { canonical: "/hinh-anh-thuc-te" },
+};
+
 export default function HinhAnhThucTePage() {
   return (
     <main className="mx-auto flex min-h-screen max-w-4xl flex-col gap-6 px-4 py-16">

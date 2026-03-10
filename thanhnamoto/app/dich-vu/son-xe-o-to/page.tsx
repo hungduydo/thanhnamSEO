@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Sơn xe ô tô tại Xuân Lộc | Thành Nam Oto",
   description:
     "Dịch vụ sơn xe ô tô tại Xuân Lộc, Đồng Nai. Sơn dặm, sơn toàn bộ, đổi màu, phủ ceramic. Phòng sơn kín, màu chuẩn theo code, bảo hành sau bàn giao.",
+  alternates: { canonical: "/dich-vu/son-xe-o-to" },
 }
 
 const VARIANTS = [
@@ -71,15 +72,15 @@ export default function SonXeOToPage() {
 
           {/* Diagonal amber slash */}
           <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
-            <div style={{ position:"absolute", width:"140%", height:"2px", top:"50%", left:"-20%", transform:"rotate(-8deg)", background:"linear-gradient(90deg, transparent, rgba(245,158,11,0.5) 40%, rgba(245,158,11,0.9) 50%, rgba(245,158,11,0.5) 60%, transparent)", boxShadow:"0 0 70px 25px rgba(245,158,11,0.07)" }} />
-            <div style={{ position:"absolute", width:"140%", height:"1px", top:"51.4%", left:"-20%", transform:"rotate(-8deg)", background:"linear-gradient(90deg, transparent, rgba(245,158,11,0.2) 40%, rgba(245,158,11,0.4) 50%, rgba(245,158,11,0.2) 60%, transparent)" }} />
+            <div style={{ position: "absolute", width: "140%", height: "2px", top: "50%", left: "-20%", transform: "rotate(-8deg)", background: "linear-gradient(90deg, transparent, rgba(245,158,11,0.5) 40%, rgba(245,158,11,0.9) 50%, rgba(245,158,11,0.5) 60%, transparent)", boxShadow: "0 0 70px 25px rgba(245,158,11,0.07)" }} />
+            <div style={{ position: "absolute", width: "140%", height: "1px", top: "51.4%", left: "-20%", transform: "rotate(-8deg)", background: "linear-gradient(90deg, transparent, rgba(245,158,11,0.2) 40%, rgba(245,158,11,0.4) 50%, rgba(245,158,11,0.2) 60%, transparent)" }} />
           </div>
 
           {/* Watermark */}
-          <span className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 select-none font-[family-name:var(--font-display)] font-black leading-none text-white/[0.022]" style={{ fontSize:"clamp(150px,22vw,320px)" }} aria-hidden>02</span>
+          <span className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 select-none font-[family-name:var(--font-display)] font-black leading-none text-white/[0.022]" style={{ fontSize: "clamp(150px,22vw,320px)" }} aria-hidden>02</span>
 
           {/* Radial amber glow */}
-          <div className="pointer-events-none absolute inset-0" style={{ background:"radial-gradient(ellipse 55% 40% at 20% 50%, rgba(245,158,11,0.06) 0%, transparent 70%)" }} aria-hidden />
+          <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(ellipse 55% 40% at 20% 50%, rgba(245,158,11,0.06) 0%, transparent 70%)" }} aria-hidden />
 
           <div className="relative z-10 mx-auto w-full max-w-6xl">
             {/* Breadcrumb */}
@@ -145,7 +146,7 @@ export default function SonXeOToPage() {
 
         {/* ── SERVICE VARIANTS ── */}
         <section className="relative overflow-hidden py-12 px-4 md:py-20 md:px-12 lg:px-20">
-          <div className="pointer-events-none absolute left-0 right-0 top-0 h-px" style={{ background:"linear-gradient(90deg, transparent, rgba(245,158,11,0.35) 50%, transparent)" }} aria-hidden />
+          <div className="pointer-events-none absolute left-0 right-0 top-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(245,158,11,0.35) 50%, transparent)" }} aria-hidden />
 
           <div className="mx-auto max-w-6xl">
             <ScrollReveal>
@@ -178,8 +179,8 @@ export default function SonXeOToPage() {
 
         {/* ── PROCESS ── */}
         <section className="relative overflow-hidden py-12 px-4 md:py-20 md:px-12 lg:px-20">
-          <div className="pointer-events-none absolute left-0 right-0 top-0 h-px" style={{ background:"linear-gradient(90deg, transparent, rgba(245,158,11,0.25) 50%, transparent)" }} aria-hidden />
-          <div className="pointer-events-none absolute inset-0" style={{ background:"radial-gradient(ellipse 70% 50% at 50% 50%, rgba(245,158,11,0.02) 0%, transparent 70%)" }} aria-hidden />
+          <div className="pointer-events-none absolute left-0 right-0 top-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(245,158,11,0.25) 50%, transparent)" }} aria-hidden />
+          <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(ellipse 70% 50% at 50% 50%, rgba(245,158,11,0.02) 0%, transparent 70%)" }} aria-hidden />
 
           <div className="relative z-10 mx-auto max-w-6xl">
             <ScrollReveal>
@@ -198,7 +199,7 @@ export default function SonXeOToPage() {
             </ScrollReveal>
 
             <div className="relative">
-              <div className="absolute left-8 right-8 top-[2rem] hidden h-px md:block" style={{ background:"linear-gradient(90deg, rgba(245,158,11,0.35), rgba(245,158,11,0.08) 50%, rgba(245,158,11,0.35))" }} aria-hidden />
+              <div className="absolute left-8 right-8 top-[2rem] hidden h-px md:block" style={{ background: "linear-gradient(90deg, rgba(245,158,11,0.35), rgba(245,158,11,0.08) 50%, rgba(245,158,11,0.35))" }} aria-hidden />
               <div className="grid gap-6 md:grid-cols-4">
                 {STEPS.map((s, i) => (
                   <ScrollReveal key={s.num} delay={i * 120}>
@@ -241,8 +242,8 @@ export default function SonXeOToPage() {
 
         {/* ── CTA ── */}
         <section id="dat-lich" className="relative overflow-hidden py-16 px-4 md:py-24 md:px-12 lg:px-20">
-          <div className="pointer-events-none absolute inset-0" style={{ background:"radial-gradient(ellipse 60% 40% at 50% 80%, rgba(245,158,11,0.06) 0%, transparent 70%)" }} aria-hidden />
-          <div className="pointer-events-none absolute left-0 right-0 top-0 h-px" style={{ background:"linear-gradient(90deg, transparent, rgba(245,158,11,0.4) 50%, transparent)" }} aria-hidden />
+          <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(ellipse 60% 40% at 50% 80%, rgba(245,158,11,0.06) 0%, transparent 70%)" }} aria-hidden />
+          <div className="pointer-events-none absolute left-0 right-0 top-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(245,158,11,0.4) 50%, transparent)" }} aria-hidden />
 
           <div className="mx-auto max-w-2xl text-center">
             <ScrollReveal>
