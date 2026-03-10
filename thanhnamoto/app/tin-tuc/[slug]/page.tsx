@@ -119,9 +119,15 @@ export default async function ArticlePage({ params }: Props) {
     dateModified: article.date,
     inLanguage: "vi",
     url: `${SITE_URL}/tin-tuc/${article.slug}`,
+    image: `${SITE_URL}/logo.png`,
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/tin-tuc/${article.slug}` },
-    author: { "@type": "Organization", name: "Thành Nam Oto", url: SITE_URL },
-    publisher: { "@type": "Organization", name: "Thành Nam Oto", url: SITE_URL },
+    author: { "@type": "Organization", name: "Thành Nam Oto", url: SITE_URL, logo: `${SITE_URL}/logo.png` },
+    publisher: {
+      "@type": "Organization",
+      name: "Thành Nam Oto",
+      url: SITE_URL,
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` },
+    },
   }
 
   return (

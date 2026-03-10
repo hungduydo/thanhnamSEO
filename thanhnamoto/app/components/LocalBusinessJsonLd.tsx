@@ -6,11 +6,14 @@ const jsonLd = {
     "Gara sửa chữa, sơn xe và bảo dưỡng định kỳ cho xe ô tô cá nhân tại Xuân Lộc, Đồng Nai. Báo giá rõ ràng, không phát sinh, bảo hành bằng văn bản.",
   url: "https://thanhnamoto.com",
   telephone: "+84388476247",
+  logo: "https://thanhnamoto.com/logo.png",
+  image: "https://thanhnamoto.com/logo.png",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Trần Nhân Tông, Khu Phố 8",
     addressLocality: "Xuân Lộc",
     addressRegion: "Đồng Nai",
+    postalCode: "76600",
     addressCountry: "VN",
   },
   geo: {

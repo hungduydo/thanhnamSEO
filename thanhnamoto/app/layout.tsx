@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Geist, Geist_Mono, Barlow_Condensed } from "next/font/google";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -69,8 +70,14 @@ export default function RootLayout({
           <header className="sticky top-0 z-40 border-b border-white/5 bg-black/40 backdrop-blur">
             <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6 lg:px-8">
               <Link href="/" className="flex items-center gap-3">
-                <div className="flex h-9 w-9 items-center justify-center rounded-full border border-amber-400/60 bg-black/60 text-sm font-semibold text-amber-300 shadow-[0_0_18px_rgba(0,0,0,0.9)]">
-                  TN
+                <div className="relative h-10 w-10 overflow-hidden rounded-full border border-amber-400/60 bg-black/60 shadow-[0_0_18px_rgba(0,0,0,0.9)]">
+                  <Image
+                    src="/logo.png"
+                    alt="Thành Nam Oto Logo"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
                 </div>
                 <div className="flex flex-col">
                   <span className="text-sm font-semibold tracking-wide">
@@ -130,10 +137,20 @@ export default function RootLayout({
             className="mt-16 border-t border-white/10 bg-black/60 py-10 text-sm text-slate-300"
           >
             <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 md:flex-row md:justify-between md:px-6 lg:px-8">
-              <div>
-                <h2 className="text-base font-semibold text-slate-50">
-                  Thành Nam Oto
-                </h2>
+              <div className="flex flex-col gap-3">
+                <Link href="/" className="flex items-center gap-3">
+                  <div className="relative h-10 w-10 overflow-hidden rounded-full border border-white/10 bg-black/60 shadow-[0_0_18px_rgba(0,0,0,0.9)]">
+                    <Image
+                      src="/logo.png"
+                      alt="Thành Nam Oto Logo"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <h2 className="text-base font-semibold text-slate-50">
+                    Thành Nam Oto
+                  </h2>
+                </Link>
                 <p className="mt-2 max-w-sm text-sm text-slate-400">
                   Gara sửa chữa, sơn xe và chăm sóc xe ô tô cá nhân tại Xuân
                   Lộc, Đồng Nai. Làm đúng hẹn, báo giá rõ ràng, có bảo hành.
