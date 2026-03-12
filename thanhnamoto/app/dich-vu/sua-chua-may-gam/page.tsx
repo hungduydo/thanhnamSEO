@@ -2,12 +2,13 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { ScrollReveal } from "@/app/components/ScrollReveal"
+import { BASE_URL } from "@/app/lib/constants"
 
 export const metadata: Metadata = {
   title: "Sửa chữa máy & gầm ô tô tại Xuân Lộc | Thành Nam Oto",
   description:
     "Dịch vụ sửa chữa máy, gầm, điện ô tô tại Xuân Lộc, Đồng Nai. Máy chẩn đoán hiện đại, báo giá rõ ràng, không tự ý thay phụ tùng, có bảo hành.",
-  alternates: { canonical: "/dich-vu/sua-chua-may-gam" },
+  alternates: { canonical: `${BASE_URL}/dich-vu/sua-chua-may-gam` },
 }
 
 const ISSUES = [

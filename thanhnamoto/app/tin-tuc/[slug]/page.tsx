@@ -3,14 +3,13 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { ScrollReveal } from "@/app/components/ScrollReveal"
 import { getArticle, getArticleSlugs, type ArticleSection } from "../_data/articles"
+import { BASE_URL as SITE_URL } from "@/app/lib/constants"
 
 type Props = { params: Promise<{ slug: string }> }
 
 export async function generateStaticParams() {
   return getArticleSlugs().map((slug) => ({ slug }))
 }
-
-const SITE_URL = "https://thanhnamoto.com"
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
@@ -20,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${article.title} | Thành Nam Oto`,
     description: article.description,
-    alternates: { canonical: `/tin-tuc/${slug}` },
+    alternates: { canonical: `${SITE_URL}/tin-tuc/${slug}` },
     openGraph: {
       type: "article",
       title: article.title,

@@ -2,12 +2,13 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ScrollReveal } from "@/app/components/ScrollReveal"
 import { ARTICLES } from "./_data/articles"
+import { BASE_URL } from "@/app/lib/constants"
 
 export const metadata: Metadata = {
   title: "Tin tức & Kinh nghiệm chăm sóc xe | Thành Nam Oto Xuân Lộc",
   description:
     "Chia sẻ kiến thức, mẹo vặt về bảo dưỡng, sửa chữa và chăm sóc xe ô tô từ thợ có kinh nghiệm tại Xuân Lộc, Đồng Nai.",
-  alternates: { canonical: "/tin-tuc" },
+  alternates: { canonical: `${BASE_URL}/tin-tuc` },
 }
 
 const CATEGORY_STYLES: Record<string, { badge: string; dot: string; line: string }> = {

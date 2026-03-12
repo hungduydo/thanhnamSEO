@@ -5,6 +5,7 @@ import { Geist, Geist_Mono, Barlow_Condensed } from "next/font/google";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
+import { BASE_URL } from "@/app/lib/constants";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,7 +24,7 @@ const barlowCondensed = Barlow_Condensed({
   display: "swap",
 });
 
-const SITE_URL = "https://thanhnamoto.com";
+const SITE_URL = BASE_URL;
 const DEFAULT_TITLE = "Gara sửa chữa & chăm sóc ô tô | Thành Nam Oto Xuân Lộc";
 const DEFAULT_DESC =
   "Gara sửa chữa, sơn xe và bảo dưỡng định kỳ cho xe ô tô cá nhân tại Xuân Lộc, Đồng Nai. Báo giá rõ ràng, không phát sinh, có bảo hành bằng văn bản.";

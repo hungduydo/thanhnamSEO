@@ -1,13 +1,15 @@
+import { BASE_URL } from "@/app/lib/constants"
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "AutoRepair",
   name: "Thành Nam Oto",
   description:
     "Gara sửa chữa, sơn xe và bảo dưỡng định kỳ cho xe ô tô cá nhân tại Xuân Lộc, Đồng Nai. Báo giá rõ ràng, không phát sinh, bảo hành bằng văn bản.",
-  url: "https://thanhnamoto.com",
+  url: BASE_URL,
   telephone: "+84388476247",
-  logo: "https://thanhnamoto.com/logo.png",
-  image: "https://thanhnamoto.com/logo.png",
+  logo: `${BASE_URL}/logo.png`,
+  image: `${BASE_URL}/logo.png`,
   address: {
     "@type": "PostalAddress",
     streetAddress: "Trần Nhân Tông, Khu Phố 8",

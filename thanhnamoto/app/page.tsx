@@ -2,12 +2,13 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import { ScrollReveal } from "./components/ScrollReveal"
 import { LocalBusinessJsonLd } from "./components/LocalBusinessJsonLd"
+import { BASE_URL } from "@/app/lib/constants"
 
 export const metadata: Metadata = {
   title: "Gara Thành Nam Oto | Sửa chữa & Sơn xe uy tín Xuân Lộc",
   description:
     "Đặt lịch tư vấn miễn phí. Sửa chữa, sơn xe, bảo dưỡng định kỳ cho xe cá nhân tại Xuân Lộc, Đồng Nai. Báo giá rõ ràng, không phát sinh, bảo hành bằng văn bản.",
-  alternates: { canonical: "/" },
+  alternates: { canonical: `${BASE_URL}/` },
 }
 
 /* ─── data ─────────────────────────────────────────────────── */

@@ -2,12 +2,13 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { ScrollReveal } from "@/app/components/ScrollReveal"
+import { BASE_URL } from "@/app/lib/constants"
 
 export const metadata: Metadata = {
   title: "Bảo dưỡng định kỳ ô tô tại Xuân Lộc | Thành Nam Oto",
   description:
     "Dịch vụ bảo dưỡng định kỳ ô tô tại Xuân Lộc, Đồng Nai. Gói theo mốc km, thay dầu, kiểm tra tổng thể, nhắc lịch định kỳ. Báo giá rõ ràng, có bảo hành.",
-  alternates: { canonical: "/dich-vu/bao-duong-dinh-ky" },
+  alternates: { canonical: `${BASE_URL}/dich-vu/bao-duong-dinh-ky` },
 }
 
 const PACKAGES = [

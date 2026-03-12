@@ -1,9 +1,10 @@
 import type { MetadataRoute } from "next"
 import { getArticleSlugs } from "./tin-tuc/_data/articles"
+import { BASE_URL as SITE_BASE_URL } from "@/app/lib/constants"
 
 const BASE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-  "https://thanhnamoto.com"
+  SITE_BASE_URL
 
 export default function sitemap(): MetadataRoute.Sitemap {
   /* ── Static pages ─────────────────────────────────────────── */

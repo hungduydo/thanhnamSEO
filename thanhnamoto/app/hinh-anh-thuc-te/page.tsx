@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/app/lib/constants";
 
 export const metadata: Metadata = {
   title: "Hình ảnh thực tế tại Gara | Thành Nam Oto",
   description: "Thư viện hình ảnh thực tế các dòng xe đã được sửa chữa và chăm sóc tại Gara Thành Nam Oto.",
-  alternates: { canonical: "/hinh-anh-thuc-te" },
+  alternates: { canonical: `${BASE_URL}/hinh-anh-thuc-te` },
 };
 
 export default function HinhAnhThucTePage() {
