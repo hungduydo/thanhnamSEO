@@ -69,6 +69,21 @@ function formatDate(iso: string) {
   return d.toLocaleDateString("vi-VN", { day: "2-digit", month: "2-digit", year: "numeric" })
 }
 
+function parseTextWithLinks(text: string) {
+  const parts = text.split(/(\[.*?\]\(.*?\))/g)
+  return parts.map((part, i) => {
+    const match = part.match(/\[(.*?)\]\((.*?)\)/)
+    if (match) {
+      return (
+        <Link key={i} href={match[2]} className="text-amber-400 underline decoration-amber-400/30 underline-offset-4 transition-colors hover:text-amber-300">
+          {match[1]}
+        </Link>
+      )
+    }
+    return part
+  })
+}
+
 function RenderSection({ section, catColor }: { section: ArticleSection; catColor: string }) {
   const cat = CATEGORY_STYLES[catColor]
   switch (section.type) {
@@ -79,14 +94,14 @@ function RenderSection({ section, catColor }: { section: ArticleSection; catColo
         </h2>
       )
     case "p":
-      return <p className="mb-4 text-[15px] leading-relaxed text-slate-300">{section.text}</p>
+      return <p className="mb-4 text-[15px] leading-relaxed text-slate-300">{parseTextWithLinks(section.text)}</p>
     case "ul":
       return (
         <ul className="mb-4 space-y-2">
           {section.items.map((item, i) => (
             <li key={i} className="flex gap-3 text-[15px] leading-relaxed text-slate-300">
               <span className={`mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full ${cat.dot}`} />
-              {item}
+              {parseTextWithLinks(item)}
             </li>
           ))}
         </ul>
@@ -94,7 +109,7 @@ function RenderSection({ section, catColor }: { section: ArticleSection; catColo
     case "note":
       return (
         <div className={`my-8 rounded-xl border-l-4 ${cat.noteBorder} ${cat.noteBg} p-5`}>
-          <p className="text-sm leading-relaxed text-slate-200">{section.text}</p>
+          <p className="text-sm leading-relaxed text-slate-200">{parseTextWithLinks(section.text)}</p>
         </div>
       )
     case "image":
@@ -146,12 +161,31 @@ export default async function ArticlePage({ params }: Props) {
     },
   }
 
+  const faqJsonLd = article.faq ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": article.faq.map(item => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    }))
+  } : null
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <style>{`
         @keyframes ar-rise {
           from { opacity: 0; transform: translateY(20px); }

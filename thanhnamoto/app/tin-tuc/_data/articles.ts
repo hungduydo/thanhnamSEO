@@ -15,6 +15,7 @@ export type Article = {
   date: string
   excerpt: string
   content: ArticleSection[]
+  faq?: { question: string; answer: string }[]
 }
 
 export const ARTICLES: Article[] = [
@@ -125,6 +126,20 @@ export const ARTICLES: Article[] = [
         text: "Nếu bạn vẫn đang băn khoăn, hãy ghé Thành Nam Oto tại Trần Nhân Tông, Khu Phố 8, Gia Ray. Chúng tôi hỗ trợ kiểm tra xe và đọc lỗi miễn phí cho tất cả khách hàng mới. Hotline: 0388 476 247.",
       },
     ],
+    faq: [
+      {
+        question: "Gara ô tô nào uy tín nhất tại Xuân Lộc Đồng Nai?",
+        answer: "Thành Nam Oto tại thị trấn Gia Ray là địa chỉ uy tín hàng đầu, chuyên sửa chữa máy gầm, sơn xe và bảo dưỡng định kỳ với báo giá minh bạch và máy chẩn đoán lỗi hiện đại.",
+      },
+      {
+        question: "Chi phí sửa chữa tại các garage Xuân Lộc có đắt không?",
+        answer: "Mức giá tại Xuân Lộc thường cạnh tranh hơn so với các thành phố lớn. Tuy nhiên, bạn nên chọn các gara có báo giá rõ ràng trước khi sửa chữa như Thành Nam Oto để tránh phát sinh chi phí.",
+      },
+      {
+        question: "Nên bảo dưỡng ô tô ở đâu tại Gia Ray?",
+        answer: "Các bác tài tại Gia Ray thường tin tưởng Ngọc Thạch Auto, Viễn Đông Auto hoặc Thành Nam Oto vì vị trí thuận tiện và đội ngũ thợ tay nghề cao.",
+      },
+    ],
   },
   {
     slug: "bao-duong-xe-bao-lau-mot-lan",
@@ -178,7 +193,7 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "Lời khuyên từ Thành Nam Oto" },
       {
         type: "p",
-        text: "Đừng chờ xe có vấn đề mới đưa vào gara. Bảo dưỡng định kỳ giúp phát hiện sớm các hư hỏng nhỏ trước khi chúng trở thành vấn đề tốn kém. Một buổi kiểm tra 30 phút có thể giúp bạn tránh được chi phí sửa chữa lớn về sau.",
+        text: "Đừng chờ xe có vấn đề mới đưa vào gara. Bảo dưỡng định kỳ giúp phát hiện sớm các hư hỏng nhỏ trước khi chúng trở thành vấn đề tốn kém. Nếu bạn đang ở khu vực Đồng Nai, hãy tham khảo ngay danh sách [gara ô tô Xuân Lộc](https://thanhnamoto.com/tin-tuc/gara-o-to-xuan-loc-chat-luong) uy tín để chọn nơi gửi gắm xe tin cậy.",
       },
       {
         type: "note",
@@ -229,7 +244,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "note",
-        text: "Gặp bất kỳ dấu hiệu nào trên đây? Đừng chờ thêm. Gọi Thành Nam Oto: 0388 476 247. Chúng tôi kết nối máy đọc lỗi và kiểm tra toàn bộ miễn phí — báo giá rõ ràng trước khi sửa bất kỳ hạng mục nào.",
+        text: "Gặp bất kỳ dấu hiệu nào trên đây? Đừng chờ thêm. Gọi Thành Nam Oto: 0388 476 247. Chúng tôi là [gara ô tô Xuân Lộc](https://thanhnamoto.com/tin-tuc/gara-o-to-xuan-loc-chat-luong) chuyên nghiệp, kết nối máy đọc lỗi và kiểm tra toàn bộ miễn phí.",
       },
     ],
   },
@@ -281,7 +296,7 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "Tại sao không nên bỏ qua?" },
       {
         type: "p",
-        text: "Hộp số hoạt động trong điều kiện nhiệt độ và áp suất cao. Nhớt bị suy giảm không còn bảo vệ các bánh răng và vòng bi bên trong — dẫn đến mài mòn, trượt, và cuối cùng là hỏng hộp số hoàn toàn. Chi phí thay nhớt hộp số định kỳ chỉ vài trăm nghìn đến vài triệu, trong khi đại tu hộp số có thể gấp 10–20 lần.",
+        text: "Hộp số hoạt động trong điều kiện nhiệt độ và áp suất cao. Nhớt bị suy giảm không còn bảo vệ các bánh răng và vòng bi bên trong — dẫn đến mài mòn, trượt, và cuối cùng là hỏng hộp số hoàn toàn. Tham khảo thêm về dịch vụ tại [gara sửa chữa ô tô Xuân Lộc](https://thanhnamoto.com/tin-tuc/gara-o-to-xuan-loc-chat-luong) để bảo vệ xế cưng của bạn tốt nhất.",
       },
       {
         type: "note",
@@ -397,7 +412,7 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "Tư vấn trước khi quyết định" },
       {
         type: "p",
-        text: "Tại Thành Nam Oto, chúng tôi luôn khuyến khích khách hàng xem thực tế màu sơn trên xe hoặc bảng màu trước khi quyết định — màu trên điện thoại và màu thực tế ngoài nắng có thể rất khác nhau. Chúng tôi cũng cung cấp tư vấn miễn phí về màu nào phù hợp with dòng xe và nhu cầu sử dụng.",
+        text: "Tại Thành Nam Oto, chúng tôi luôn khuyến khích khách hàng xem thực tế màu sơn trên xe hoặc bảng màu trước khi quyết định. Với kinh nghiệm là [gara ô tô Xuân Lộc uy tín](https://thanhnamoto.com/tin-tuc/gara-o-to-xuan-loc-chat-luong), chúng tôi cũng cung cấp tư vấn miễn phí về màu nào phù hợp với dòng xe và nhu cầu sử dụng.",
       },
       {
         type: "note",
