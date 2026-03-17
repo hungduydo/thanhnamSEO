@@ -97,6 +97,23 @@ function RenderSection({ section, catColor }: { section: ArticleSection; catColo
           <p className="text-sm leading-relaxed text-slate-200">{section.text}</p>
         </div>
       )
+    case "image":
+      return (
+        <div className="my-8">
+          <div className="relative aspect-video overflow-hidden rounded-2xl border border-white/10">
+            <img
+              src={section.src}
+              alt={section.alt}
+              className="h-full w-full object-cover"
+            />
+          </div>
+          {section.caption && (
+            <p className="mt-3 text-center text-xs italic text-slate-500">
+              {section.caption}
+            </p>
+          )}
+        </div>
+      )
     default:
       return null
   }

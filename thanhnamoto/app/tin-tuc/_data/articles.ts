@@ -3,6 +3,7 @@ export type ArticleSection =
   | { type: "p"; text: string }
   | { type: "ul"; items: string[] }
   | { type: "note"; text: string }
+  | { type: "image"; src: string; alt: string; caption?: string }
 
 export type Article = {
   slug: string
@@ -17,6 +18,114 @@ export type Article = {
 }
 
 export const ARTICLES: Article[] = [
+  {
+    slug: "gara-o-to-xuan-loc-chat-luong",
+    title: "Top 13+ Gara Ô Tô Xuân Lộc Đồng Nai Uy Tín & Chất Lượng Nhất 2026",
+    description:
+      "Danh sách 13+ gara ô tô Xuân Lộc Đồng Nai uy tín nhất. Thông tin chi tiết địa chỉ, số điện thoại và dịch vụ của các garage sửa chữa ô tô hàng đầu tại Gia Ray, Xuân Lộc.",
+    category: "Tiện ích",
+    categoryColor: "sky",
+    readTime: "10 phút",
+    date: "2026-03-17",
+    excerpt:
+      "Tìm kiếm gara ô tô Xuân Lộc uy tín không hề đơn giản. Bài viết này tổng hợp danh sách các địa chỉ sửa chữa xe tin cậy nhất tại khu vực Gia Ray và lân cận để bạn lựa chọn.",
+    content: [
+      {
+        type: "p",
+        text: "Xuân Lộc là cửa ngõ giao thông quan trọng tại Đồng Nai, nơi tập trung lượng lớn xe cá nhân và xe vận tải. Việc tìm kiếm một địa chỉ sửa chữa xe tin cậy là ưu tiên hàng đầu của các bác tài. Dưới đây là danh sách tổng hợp các gara ô tô Xuân Lộc được khách hàng đánh giá cao nhất hiện nay.",
+      },
+      {
+        type: "image",
+        src: "/images/sua-chua.png",
+        alt: "Gara ô tô Xuân Lộc Đồng Nai uy tín",
+        caption: "Thành Nam Oto - Địa chỉ sửa chữa ô tô tin cậy tại Gia Ray, Xuân Lộc",
+      },
+      { type: "h2", text: "1. Thành Nam Oto — Chuyên nghiệp & Minh bạch" },
+      {
+        type: "p",
+        text: "Dù mới nhưng Thành Nam Oto đã nhanh chóng khẳng định vị thế nhờ vào quy trình làm việc hiện đại, minh bạch về giá cả và cam kết bảo hành bằng văn bản. Chúng tôi tập trung vào trải nghiệm khách hàng với các tiêu chuẩn khắt khe nhất.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Địa chỉ: Trần Nhân Tông, Khu Phố 8, TT. Gia Ray, Xuân Lộc, Đồng Nai.",
+          "Điện thoại: 0388 476 247",
+          "Dịch vụ nổi bật: Sơn xe phòng kín, Sửa chữa máy gầm, Bảo dưỡng định kỳ, Chẩn đoán lỗi bằng máy chuyên dụng.",
+        ],
+      },
+      { type: "h2", text: "2. Ngọc Thạch Auto" },
+      {
+        type: "p",
+        text: "Một trong những gara lâu đời tại Gia Ray với đội ngũ thợ có tay nghề vững.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Địa chỉ: QL1A, TT. Gia Ray, Xuân Lộc, Đồng Nai.",
+          "Dịch vụ: Chỉnh thẳng bánh xe, Lắp đặt máy lạnh, Chăm sóc nội thất.",
+        ],
+      },
+      { type: "h2", text: "3. Hùng Vương Auto" },
+      {
+        type: "p",
+        text: "Trung tâm chăm sóc xe chuyên nghiệp nằm sâu trong thị trấn, thuận tiện cho cư dân khu vực trung tâm.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Địa chỉ: 132/8 Hùng Vương, TT. Gia Ray, Xuân Lộc, Đồng Nai.",
+          "Dịch vụ: Sửa chữa và bảo trì chung, Sửa động cơ, Hệ thống lái.",
+        ],
+      },
+      { type: "h2", text: "4. Garage Viễn Đông Auto" },
+      {
+        type: "p",
+        text: "Nổi tiếng với dịch vụ đa dạng và tư vấn nhiệt tình, đúng hẹn.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Địa chỉ: 1 QL1A, TT. Gia Ray, Xuân Lộc, Đồng Nai.",
+          "Dịch vụ: Đánh bóng xe, Tinh chỉnh động cơ, Ống xả.",
+        ],
+      },
+      { type: "h2", text: "Các Garage uy tín khác tại các xã lân cận" },
+      {
+        type: "p",
+        text: "Ngoài khu vực trung tâm Gia Ray, bạn cũng có thể tham khảo các địa chỉ sau:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Gara Năm Nhân: 1259 QL1A, Xuân Hưng (Chuyên lốp, phanh, điện ô tô).",
+          "Garage Quang Khánh: ĐT765, Suối Cát (Chuyên điện lạnh, hộp số tự động).",
+          "Garage Lê Hành: QL1A, Bảo Hoà (Tinh chỉnh động cơ, thiết bị điện).",
+          "Garage Hai Tèo: 3018 QL1A, ấp Việt Kiều (Uy tín, chất lượng lâu năm).",
+          "Triệu Thành Auto: 33 Suối Rết B, Xuân Định (Chăm sóc xe, độ đèn).",
+          "Garage Tú: 515 Hồ Thị Hương (Thay dầu, bảo dưỡng, lốp xe).",
+          "Garage Binh Sơn: Xuân Hiệp (Nhiệt tình, tâm huyết với nghề).",
+        ],
+      },
+      { type: "h2", text: "Lời khuyên khi chọn Gara tại Xuân Lộc" },
+      {
+        type: "p",
+        text: "Để tránh những phiền toái không đáng có khi đi sửa xe, các bác tài nên lưu ý:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Luôn yêu cầu báo giá bằng văn bản hoặc qua Zalo trước khi đồng ý tháo máy.",
+          "Kiểm tra phụ tùng thay thế xem có đúng chủng loại và xuất xứ không.",
+          "Ưu tiên các gara có máy đọc lỗi (scanners) để chẩn đoán chính xác, tránh sửa mò.",
+          "Quan sát thái độ phục vụ và sự sạch sẽ của xưởng sửa chữa.",
+        ],
+      },
+      {
+        type: "note",
+        text: "Nếu bạn vẫn đang băn khoăn, hãy ghé Thành Nam Oto tại Trần Nhân Tông, Khu Phố 8, Gia Ray. Chúng tôi hỗ trợ kiểm tra xe và đọc lỗi miễn phí cho tất cả khách hàng mới. Hotline: 0388 476 247.",
+      },
+    ],
+  },
   {
     slug: "bao-duong-xe-bao-lau-mot-lan",
     title: "Bảo dưỡng xe bao lâu một lần? Lịch chuẩn theo km & thời gian",
@@ -259,7 +368,7 @@ export const ARTICLES: Article[] = [
       {
         type: "ul",
         items: [
-          "Trắng: Dễ dặm, ít thể hiện bụi nhỏ, nhưng dễ bẩn với bùn đất.",
+          "Trắng: Dễ dặm, ít thể hiện bụi nhỏ, nhưng dễ bẩn with bùn đất.",
           "Bạc/Xám: Rất dễ sơn dặm, che được nhiều loại vết trầy nhỏ.",
           "Đen: Sang trọng nhưng thể hiện rõ mọi vết xước, bụi, vân tay. Khó dặm chính xác.",
           "Đỏ/Cam/Vàng: Dễ bị phai màu sau 3–5 năm ngoài nắng. Khó pha màu dặm.",
@@ -276,7 +385,7 @@ export const ARTICLES: Article[] = [
         items: [
           "Đổi màu hoàn toàn cần sơn cả phần bên trong cánh cửa, nẹp, và các góc khuất — nếu chỉ sơn ngoài, sẽ lộ màu cũ khi mở cửa.",
           "Giấy tờ xe: Cần đăng ký lại màu xe tại phòng CSGT nếu đổi sang màu khác hẳn.",
-          "Màu đặc biệt (metallic, pearl, matte) khó dặm hơn — cần thợ có kinh nghiệm với màu đó.",
+          "Màu đặc biệt (metallic, pearl, matte) khó dặm hơn — cần thợ có kinh nghiệm with màu đó.",
           "Thời gian sơn đổi màu toàn bộ thường 5–10 ngày làm việc, không phải 1–2 ngày.",
         ],
       },
@@ -288,7 +397,7 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "Tư vấn trước khi quyết định" },
       {
         type: "p",
-        text: "Tại Thành Nam Oto, chúng tôi luôn khuyến khích khách hàng xem thực tế màu sơn trên xe hoặc bảng màu trước khi quyết định — màu trên điện thoại và màu thực tế ngoài nắng có thể rất khác nhau. Chúng tôi cũng cung cấp tư vấn miễn phí về màu nào phù hợp với dòng xe và nhu cầu sử dụng.",
+        text: "Tại Thành Nam Oto, chúng tôi luôn khuyến khích khách hàng xem thực tế màu sơn trên xe hoặc bảng màu trước khi quyết định — màu trên điện thoại và màu thực tế ngoài nắng có thể rất khác nhau. Chúng tôi cũng cung cấp tư vấn miễn phí về màu nào phù hợp with dòng xe và nhu cầu sử dụng.",
       },
       {
         type: "note",
