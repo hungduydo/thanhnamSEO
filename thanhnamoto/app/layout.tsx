@@ -91,27 +91,21 @@ export default function RootLayout({
               </Link>
 
               <nav className="hidden items-center gap-6 text-sm font-medium text-slate-200 md:flex">
-                <a href="#hero" className="header-link">
+                <Link href="/" className="header-link">
                   Trang chủ
-                </a>
-                <a href="#dich-vu" className="header-link">
+                </Link>
+                <Link href="/dich-vu" className="header-link">
                   Dịch vụ
-                </a>
-                <a href="#quy-trinh" className="header-link">
-                  Quy trình
-                </a>
-                <a href="#thu-vien" className="header-link">
-                  Thư viện
-                </a>
-                <a href="#dat-lich" className="header-link">
-                  Đặt lịch
-                </a>
-                <a
-                  href="#lien-he"
-                  className="header-link"
-                >
+                </Link>
+                <Link href="/tin-tuc" className="header-link">
+                  Tin tức
+                </Link>
+                <Link href="/hinh-anh-thuc-te" className="header-link">
+                  Hình ảnh
+                </Link>
+                <Link href="/lien-he" className="header-link">
                   Liên hệ
-                </a>
+                </Link>
                 <a
                   href="tel:0388476247"
                   className="inline-flex items-center gap-2 rounded-full bg-amber-400 px-4 py-2 text-sm font-semibold text-slate-950 shadow-[0_12px_30px_rgba(0,0,0,0.8)] hover:bg-amber-300"
@@ -133,56 +127,141 @@ export default function RootLayout({
 
           <main>{children}</main>
 
-          <footer
-            id="lien-he"
-            className="mt-16 border-t border-white/10 bg-black/60 py-10 text-sm text-slate-300"
-          >
-            <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 md:flex-row md:justify-between md:px-6 lg:px-8">
-              <div className="flex flex-col gap-3">
-                <Link href="/" className="flex items-center gap-3">
-                  <div className="relative h-10 w-10 overflow-hidden rounded-full border border-white/10 bg-black/60 shadow-[0_0_18px_rgba(0,0,0,0.9)]">
-                    <Image
-                      src="/logo.png"
-                      alt="Thành Nam Auto Logo"
-                      fill
-                      className="object-cover"
-                    />
+          <footer id="lien-he" className="site-footer">
+            <div className="site-footer-inner">
+              {/* ── Main grid: Brand | Sitemap | Contact ── */}
+              <div className="grid grid-cols-1 gap-10 md:grid-cols-[1.6fr_1fr_1fr_1.4fr] md:gap-8">
+
+                {/* Brand column */}
+                <div className="flex flex-col gap-4">
+                  <Link href="/" className="flex items-center gap-3 w-fit">
+                    <div className="relative h-10 w-10 overflow-hidden rounded-full border border-amber-400/40 bg-black/60 shadow-[0_0_18px_rgba(0,0,0,0.9)]">
+                      <Image
+                        src="/logo.png"
+                        alt="Thành Nam Auto Logo"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="flex flex-col">
+                      <span className="fn-display text-base font-800 tracking-wide text-slate-50 uppercase leading-none" style={{fontFamily:"var(--font-display),system-ui,sans-serif",fontWeight:800,letterSpacing:"0.04em"}}>
+                        Thành Nam Auto
+                      </span>
+                      <span className="text-[0.65rem] text-slate-500 tracking-widest uppercase mt-0.5">
+                        Gara ô tô Xuân Lộc
+                      </span>
+                    </div>
+                  </Link>
+                  <p className="text-[0.82rem] text-slate-400 leading-relaxed max-w-[18rem]">
+                    Sửa chữa, sơn xe và bảo dưỡng ô tô cá nhân tại Xuân Lộc, Đồng Nai.
+                    Báo giá rõ ràng, đúng hẹn, bảo hành bằng văn bản.
+                  </p>
+                  {/* Social pills */}
+                  <div className="flex flex-wrap gap-2 mt-1">
+                    <a href="https://zalo.me/0388476247" target="_blank" rel="noopener noreferrer" className="footer-social-pill">
+                      <span>💬</span> Zalo
+                    </a>
+                    <a href="#" className="footer-social-pill">
+                      <span>📘</span> Facebook
+                    </a>
+                    <a href="#" className="footer-social-pill">
+                      <span>✉️</span> Messenger
+                    </a>
                   </div>
-                  <h2 className="text-base font-semibold text-slate-50">
-                    Thành Nam Auto
-                  </h2>
-                </Link>
-                <p className="mt-2 max-w-sm text-sm text-slate-400">
-                  Gara sửa chữa, sơn xe và chăm sóc xe ô tô cá nhân tại Xuân
-                  Lộc, Đồng Nai. Làm đúng hẹn, báo giá rõ ràng, có bảo hành.
-                </p>
-              </div>
-              <div className="space-y-1">
-                <p>Địa chỉ: Trần Nhân Tông, Khu Phố 8, tt. Gia Ray, Xuân Lộc, Đồng Nai</p>
-                <p>Điện thoại: 0388 476 247</p>
-                <p>Giờ làm việc: 08:00 – 17:30 (Thứ 2 – Chủ nhật)</p>
-              </div>
-              <div className="space-y-2">
-                <p className="text-xs uppercase tracking-[0.18em] text-slate-400">
-                  Liên hệ trực tuyến
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <button className="rounded-full border border-sky-400/60 px-3 py-1.5 text-xs font-semibold text-sky-300">
-                    Zalo
-                  </button>
-                  <button className="rounded-full border border-sky-400/60 px-3 py-1.5 text-xs font-semibold text-sky-300">
-                    Messenger
-                  </button>
-                  <button className="rounded-full border border-slate-500/60 px-3 py-1.5 text-xs font-semibold text-slate-200">
-                    Facebook
-                  </button>
                 </div>
+
+                {/* Sitemap — Dịch vụ */}
+                <nav aria-label="Dịch vụ">
+                  <p className="footer-col-label">Dịch vụ</p>
+                  <ul className="flex flex-col gap-2.5">
+                    <li>
+                      <Link href="/dich-vu" className="footer-link">
+                        Tất cả dịch vụ
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/dich-vu/son-xe-o-to" className="footer-link footer-link-sub">
+                        Sơn xe ô tô
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/dich-vu/bao-duong-dinh-ky" className="footer-link footer-link-sub">
+                        Bảo dưỡng định kỳ
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/dich-vu/sua-chua-may-gam" className="footer-link footer-link-sub">
+                        Sửa chữa máy gầm
+                      </Link>
+                    </li>
+                  </ul>
+                </nav>
+
+                {/* Sitemap — Thông tin */}
+                <nav aria-label="Thông tin">
+                  <p className="footer-col-label">Thông tin</p>
+                  <ul className="flex flex-col gap-2.5">
+                    <li>
+                      <Link href="/" className="footer-link">Trang chủ</Link>
+                    </li>
+                    <li>
+                      <Link href="/tin-tuc" className="footer-link">Tin tức</Link>
+                    </li>
+                    <li>
+                      <Link href="/hinh-anh-thuc-te" className="footer-link">Hình ảnh thực tế</Link>
+                    </li>
+                    <li>
+                      <Link href="/lien-he" className="footer-link">Liên hệ</Link>
+                    </li>
+                  </ul>
+                </nav>
+
+                {/* Contact */}
+                <div>
+                  <p className="footer-col-label">Liên hệ</p>
+                  <div className="flex flex-col gap-3">
+                    <div className="footer-contact-row">
+                      <i className="footer-contact-icon">📍</i>
+                      <span>Trần Nhân Tông, Khu Phố 8, tt. Gia Ray, Xuân Lộc, Đồng Nai</span>
+                    </div>
+                    <div className="footer-contact-row">
+                      <i className="footer-contact-icon">📞</i>
+                      <a href="tel:0388476247" className="footer-link" style={{fontSize:"0.82rem"}}>
+                        0388 476 247
+                      </a>
+                    </div>
+                    <div className="footer-contact-row">
+                      <i className="footer-contact-icon">🕐</i>
+                      <span>08:00 – 17:30<br />Thứ 2 – Chủ nhật</span>
+                    </div>
+                    <div className="mt-2">
+                      <a
+                        href="tel:0388476247"
+                        className="inline-flex items-center gap-2 rounded-full bg-amber-400 px-4 py-2 text-xs font-semibold text-slate-950 shadow-[0_8px_24px_rgba(245,158,11,0.25)] hover:bg-amber-300 transition-colors"
+                      >
+                        Gọi đặt lịch ngay
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>{/* /grid */}
+            </div>
+
+            {/* ── Bottom bar ── */}
+            <div className="site-footer-bottom">
+              <p className="site-footer-copy">
+                © {new Date().getFullYear()} Thành Nam Auto — Gara ô tô Xuân Lộc, Đồng Nai
+              </p>
+              <div className="site-footer-tech">
+                <span className="site-footer-tech-dot" />
+                Next.js
+                <span className="site-footer-tech-dot" />
+                Vercel
+                <span className="site-footer-tech-dot" />
+                Local SEO
               </div>
             </div>
-            <p className="mt-6 text-center text-xs text-slate-500">
-              © {new Date().getFullYear()} Thành Nam Auto. Website tối ưu với
-              Next.js &amp; Vercel.
-            </p>
           </footer>
 
           <a

@@ -1013,3 +1013,184 @@ body::after {
   color: rgba(148,163,184,0.58);
   margin-top: 0.2rem;
 }
+
+/* ── Gallery page keyframes (used via Tailwind animate-[...]) ── */
+@keyframes gallery-card-in {
+  from { opacity: 0; transform: translateY(18px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0)     scale(1);   }
+}
+
+@keyframes gallery-accent-grow {
+  from { transform: scaleX(0); transform-origin: left; }
+  to   { transform: scaleX(1); transform-origin: left; }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   SITE FOOTER — Industrial Editorial
+═══════════════════════════════════════════════════════════ */
+
+/* Thin decorative amber-to-emerald rule at the very top */
+.site-footer {
+  position: relative;
+  margin-top: 5rem;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.0)),
+    radial-gradient(ellipse 80% 60% at 50% 100%, rgba(245,158,11,0.06), transparent);
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.site-footer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(245,158,11,0.0) 5%,
+    var(--clr-amber) 30%,
+    var(--clr-emerald) 70%,
+    rgba(16,185,129,0.0) 95%,
+    transparent 100%
+  );
+}
+
+.site-footer-inner {
+  max-width: var(--section-max);
+  margin: 0 auto;
+  padding: 3.5rem clamp(1.25rem, 4vw, 2.5rem) 0;
+}
+
+/* ── Column section label ── */
+.footer-col-label {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 800;
+  font-size: 0.6rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--clr-amber);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(245,158,11,0.18);
+}
+
+/* ── Sitemap links ── */
+.footer-link {
+  position: relative;
+  display: inline-block;
+  font-size: 0.875rem;
+  color: rgba(148,163,184,0.82);
+  text-decoration: none;
+  padding-bottom: 1px;
+  transition: color 0.15s ease;
+}
+
+.footer-link::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 0; height: 1px;
+  background: linear-gradient(90deg, var(--clr-amber), var(--clr-emerald));
+  transition: width 0.18s ease-out;
+}
+
+.footer-link:hover {
+  color: #f5f0e8;
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+/* ── Sub-page links (slightly indented, smaller) ── */
+.footer-link-sub {
+  font-size: 0.8rem;
+  color: rgba(148,163,184,0.54);
+  padding-left: 0.75rem;
+  border-left: 1px solid rgba(245,158,11,0.22);
+}
+
+.footer-link-sub:hover {
+  color: rgba(245,158,11,0.85);
+  border-left-color: rgba(245,158,11,0.6);
+}
+
+/* ── Contact detail rows ── */
+.footer-contact-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.82rem;
+  color: rgba(148,163,184,0.75);
+  line-height: 1.55;
+}
+
+.footer-contact-icon {
+  flex-shrink: 0;
+  width: 1.1rem;
+  text-align: center;
+  color: var(--clr-amber);
+  font-style: normal;
+  margin-top: 0.08em;
+}
+
+/* ── Social pill buttons ── */
+.footer-social-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(148,163,184,0.22);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: rgba(148,163,184,0.75);
+  text-decoration: none;
+  transition: border-color 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+  cursor: pointer;
+  background: none;
+}
+
+.footer-social-pill:hover {
+  border-color: rgba(245,158,11,0.5);
+  color: var(--clr-amber);
+  background-color: rgba(245,158,11,0.06);
+}
+
+/* ── Bottom bar ── */
+.site-footer-bottom {
+  margin-top: 3rem;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding: 1.25rem clamp(1.25rem, 4vw, 2.5rem);
+  max-width: var(--section-max);
+  margin-left: auto; margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.site-footer-copy {
+  font-size: 0.72rem;
+  color: rgba(148,163,184,0.4);
+  letter-spacing: 0.04em;
+}
+
+.site-footer-tech {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(148,163,184,0.28);
+}
+
+.site-footer-tech-dot {
+  width: 3px; height: 3px;
+  border-radius: 9999px;
+  background: rgba(245,158,11,0.4);
+  display: inline-block;
+}
