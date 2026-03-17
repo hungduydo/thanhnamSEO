@@ -3,6 +3,7 @@ import Image from "next/image"
 import { ScrollReveal } from "./components/ScrollReveal"
 import { LocalBusinessJsonLd } from "./components/LocalBusinessJsonLd"
 import { BASE_URL } from "@/app/lib/constants"
+import { CONTACT } from "@/app/lib/contact"
 
 export const metadata: Metadata = {
   title: "Gara Thành Nam Auto | Sửa chữa & Sơn xe uy tín Xuân Lộc",
@@ -242,7 +243,7 @@ export default function Home2Page() {
                 Đặt lịch tư vấn miễn phí
               </a>
               <a
-                href="tel:0388476247"
+                href={CONTACT.phoneHref}
                 className="inline-flex items-center gap-2 rounded-full border border-slate-600/80 bg-white/5 px-7 py-3 text-sm font-semibold text-slate-50 backdrop-blur transition-all hover:border-amber-400/50 hover:bg-white/8"
               >
                 📞 0388 476 247
@@ -992,7 +993,7 @@ export default function Home2Page() {
               <p className="mt-6 text-xs text-slate-500">
                 Hoặc gọi trực tiếp:{" "}
                 <a
-                  href="tel:0388476247"
+                  href={CONTACT.phoneHref}
                   className="font-medium text-amber-400 transition-colors hover:text-amber-300"
                 >
                   0388 476 247

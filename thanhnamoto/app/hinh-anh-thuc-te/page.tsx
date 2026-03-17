@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { BASE_URL } from "@/app/lib/constants";
+import { CONTACT } from "@/app/lib/contact";
 import GalleryGrid from "./_components/GalleryGrid";
 
 export const metadata: Metadata = {
@@ -124,7 +125,7 @@ export default function HinhAnhThucTePage() {
             Xe của bạn cần được chăm sóc?
           </p>
           <a
-            href="tel:0388476247"
+            href={CONTACT.phoneHref}
             className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-amber-400 text-slate-950 text-[0.82rem] font-bold tracking-[0.05em] shadow-[0_8px_28px_rgba(245,158,11,0.28)] hover:bg-amber-300 hover:shadow-[0_12px_36px_rgba(245,158,11,0.4)] transition-all whitespace-nowrap"
           >
             Đặt lịch ngay — 0388 476 247

@@ -6,6 +6,7 @@ import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import { BASE_URL } from "@/app/lib/constants";
+import { CONTACT } from "@/app/lib/contact";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -107,7 +108,7 @@ export default function RootLayout({
                   Liên hệ
                 </Link>
                 <a
-                  href="tel:0388476247"
+                  href={CONTACT.phoneHref}
                   className="inline-flex items-center gap-2 rounded-full bg-amber-400 px-4 py-2 text-sm font-semibold text-slate-950 shadow-[0_12px_30px_rgba(0,0,0,0.8)] hover:bg-amber-300"
                 >
                   📞 Gọi ngay
@@ -116,7 +117,7 @@ export default function RootLayout({
 
               <div className="flex items-center gap-2 md:hidden">
                 <a
-                  href="tel:0388476247"
+                  href={CONTACT.phoneHref}
                   className="inline-flex items-center gap-1 rounded-full bg-amber-400 px-3 py-1.5 text-xs font-semibold text-slate-950 shadow-[0_10px_24px_rgba(0,0,0,0.85)]"
                 >
                   📞 Gọi ngay
@@ -158,10 +159,10 @@ export default function RootLayout({
                   </p>
                   {/* Social pills */}
                   <div className="flex flex-wrap gap-2 mt-1">
-                    <a href="https://zalo.me/0388476247" target="_blank" rel="noopener noreferrer" className="footer-social-pill">
+                    <a href={CONTACT.zaloHref} target="_blank" rel="noopener noreferrer" className="footer-social-pill">
                       <span>💬</span> Zalo
                     </a>
-                    <a href="#" className="footer-social-pill">
+                    <a href={CONTACT.fbHref} className="footer-social-pill">
                       <span>📘</span> Facebook
                     </a>
                     <a href="#" className="footer-social-pill">
@@ -226,7 +227,7 @@ export default function RootLayout({
                     </div>
                     <div className="footer-contact-row">
                       <i className="footer-contact-icon">📞</i>
-                      <a href="tel:0388476247" className="footer-link" style={{fontSize:"0.82rem"}}>
+                      <a href={CONTACT.phoneHref} className="footer-link" style={{fontSize:"0.82rem"}}>
                         0388 476 247
                       </a>
                     </div>
@@ -236,7 +237,7 @@ export default function RootLayout({
                     </div>
                     <div className="mt-2">
                       <a
-                        href="tel:0388476247"
+                        href={CONTACT.phoneHref}
                         className="inline-flex items-center gap-2 rounded-full bg-amber-400 px-4 py-2 text-xs font-semibold text-slate-950 shadow-[0_8px_24px_rgba(245,158,11,0.25)] hover:bg-amber-300 transition-colors"
                       >
                         Gọi đặt lịch ngay
@@ -265,7 +266,7 @@ export default function RootLayout({
           </footer>
 
           <a
-            href="tel:0388476247"
+            href={CONTACT.phoneHref}
             className="fixed bottom-4 right-4 z-50 inline-flex items-center gap-2 rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-slate-950 shadow-[0_16px_40px_rgba(0,0,0,0.95)] ring-2 ring-emerald-300/60 md:hidden"
           >
             📞 Gọi gara

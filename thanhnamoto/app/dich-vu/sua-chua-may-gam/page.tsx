@@ -3,6 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { ScrollReveal } from "@/app/components/ScrollReveal"
 import { BASE_URL } from "@/app/lib/constants"
+import { CONTACT } from "@/app/lib/contact"
 
 export const metadata: Metadata = {
   title: "Sửa chữa máy & gầm ô tô tại Xuân Lộc | Thành Nam Auto",
@@ -93,7 +94,7 @@ export default function SuaChuaMayGamPage() {
               <a href="#dat-lich" className="inline-flex items-center gap-2 rounded-full bg-emerald-400 px-7 py-3 text-sm font-semibold text-slate-950 shadow-[0_16px_40px_rgba(16,185,129,0.28)] transition-all hover:-translate-y-0.5 hover:bg-emerald-300">
                 Đặt lịch chẩn đoán miễn phí
               </a>
-              <a href="tel:0388476247" className="inline-flex items-center gap-2 rounded-full border border-slate-600/80 bg-white/5 px-7 py-3 text-sm font-semibold text-slate-50 backdrop-blur transition-all hover:border-emerald-400/50">
+              <a href={CONTACT.phoneHref} className="inline-flex items-center gap-2 rounded-full border border-slate-600/80 bg-white/5 px-7 py-3 text-sm font-semibold text-slate-50 backdrop-blur transition-all hover:border-emerald-400/50">
                 📞 Tư vấn ngay
               </a>
             </div>
@@ -246,7 +247,7 @@ export default function SuaChuaMayGamPage() {
             </ScrollReveal>
             <ScrollReveal delay={150}>
               <div className="flex flex-wrap justify-center gap-3">
-                <a href="tel:0388476247" className="inline-flex items-center gap-2 rounded-full bg-emerald-400 px-7 py-3 text-sm font-semibold text-slate-950 shadow-[0_16px_40px_rgba(16,185,129,0.28)] transition-all hover:-translate-y-0.5 hover:bg-emerald-300">
+                <a href={CONTACT.phoneHref} className="inline-flex items-center gap-2 rounded-full bg-emerald-400 px-7 py-3 text-sm font-semibold text-slate-950 shadow-[0_16px_40px_rgba(16,185,129,0.28)] transition-all hover:-translate-y-0.5 hover:bg-emerald-300">
                   📞 Gọi ngay: 0388 476 247
                 </a>
                 <Link href="/dich-vu" className="inline-flex items-center gap-2 rounded-full border border-slate-600/80 bg-white/5 px-7 py-3 text-sm font-semibold text-slate-50 backdrop-blur transition-all hover:border-emerald-400/50">

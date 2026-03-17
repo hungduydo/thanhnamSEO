@@ -3,6 +3,7 @@ import Link from "next/link"
 import { ScrollReveal } from "@/app/components/ScrollReveal"
 import { ARTICLES } from "./_data/articles"
 import { BASE_URL } from "@/app/lib/constants"
+import { CONTACT } from "@/app/lib/contact"
 
 export const metadata: Metadata = {
   title: "Tin tức & Kinh nghiệm chăm sóc xe | Thành Nam Auto Xuân Lộc",
@@ -183,7 +184,7 @@ export default function TinTucPage() {
               </div>
               <div className="flex shrink-0 flex-wrap justify-center gap-3 md:justify-end">
                 <a
-                  href="tel:0388476247"
+                  href={CONTACT.phoneHref}
                   className="inline-flex items-center gap-2 rounded-full bg-amber-400 px-6 py-2.5 text-sm font-semibold text-slate-950 shadow-[0_12px_32px_rgba(245,158,11,0.25)] transition-all hover:-translate-y-0.5 hover:bg-amber-300"
                 >
                   📞 0388 476 247

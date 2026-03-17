@@ -1,4 +1,5 @@
 import { BASE_URL } from "@/app/lib/constants"
+import { CONTACT } from "@/app/lib/contact"
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -7,21 +8,21 @@ const jsonLd = {
   description:
     "Gara sửa chữa, sơn xe và bảo dưỡng định kỳ cho xe ô tô cá nhân tại Xuân Lộc, Đồng Nai. Báo giá rõ ràng, không phát sinh, bảo hành bằng văn bản.",
   url: BASE_URL,
-  telephone: "+84388476247",
+  telephone: CONTACT.phoneE164,
   logo: `${BASE_URL}/logo.png`,
   image: `${BASE_URL}/logo.png`,
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Trần Nhân Tông, Khu Phố 8",
-    addressLocality: "tt. Gia Ray, Xuân Lộc",
-    addressRegion: "Đồng Nai",
-    postalCode: "76600",
+    streetAddress: CONTACT.addressStreet,
+    addressLocality: CONTACT.addressCity,
+    addressRegion: CONTACT.addressRegion,
+    postalCode: CONTACT.addressPostal,
     addressCountry: "VN",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 10.918214879920205,
-    longitude: 107.40338518778738,
+    latitude: CONTACT.geoLat,
+    longitude: CONTACT.geoLng,
   },
   openingHoursSpecification: [
     {
@@ -46,7 +47,7 @@ const jsonLd = {
     "@type": "City",
     name: "tt. Gia Ray, Xuân Lộc, Đồng Nai",
   },
-  hasMap: "https://maps.google.com/?q=10.918214879920205,107.40338518778738",
+  hasMap: CONTACT.mapsHref,
 }
 
 export function LocalBusinessJsonLd() {
