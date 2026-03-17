@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!article) return {}
   const url = `${SITE_URL}/tin-tuc/${slug}`
   return {
-    title: `${article.title} | Thành Nam Oto`,
+    title: `${article.title} | Thành Nam Auto`,
     description: article.description,
     alternates: { canonical: `${SITE_URL}/tin-tuc/${slug}` },
     openGraph: {
@@ -25,10 +25,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: article.title,
       description: article.description,
       url,
-      siteName: "Thành Nam Oto",
+      siteName: "Thành Nam Auto",
       locale: "vi_VN",
       publishedTime: article.date,
-      authors: ["Thành Nam Oto"],
+      authors: ["Thành Nam Auto"],
       images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: article.title }],
     },
     twitter: {
@@ -152,10 +152,10 @@ export default async function ArticlePage({ params }: Props) {
     url: `${SITE_URL}/tin-tuc/${article.slug}`,
     image: `${SITE_URL}/logo.png`,
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/tin-tuc/${article.slug}` },
-    author: { "@type": "Organization", name: "Thành Nam Oto", url: SITE_URL, logo: `${SITE_URL}/logo.png` },
+    author: { "@type": "Organization", name: "Thành Nam Auto", url: SITE_URL, logo: `${SITE_URL}/logo.png` },
     publisher: {
       "@type": "Organization",
-      name: "Thành Nam Oto",
+      name: "Thành Nam Auto",
       url: SITE_URL,
       logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` },
     },
@@ -244,7 +244,7 @@ export default async function ArticlePage({ params }: Props) {
               <span className="h-px w-4 bg-slate-700" />
               <span>{article.readTime} đọc</span>
               <span className="h-px w-4 bg-slate-700" />
-              <span>Thành Nam Oto · Xuân Lộc, Đồng Nai</span>
+              <span>Thành Nam Auto · Xuân Lộc, Đồng Nai</span>
             </div>
           </div>
         </section>

@@ -4,7 +4,7 @@ import { ScrollReveal } from "@/app/components/ScrollReveal"
 import { BASE_URL } from "@/app/lib/constants"
 
 export const metadata: Metadata = {
-  title: "Dịch vụ sửa chữa & chăm sóc ô tô | Thành Nam Oto Xuân Lộc",
+  title: "Dịch vụ sửa chữa & chăm sóc ô tô | Thành Nam Auto Xuân Lộc",
   description:
     "Sửa chữa, sơn xe và bảo dưỡng định kỳ cho xe ô tô cá nhân tại Xuân Lộc, Đồng Nai. Báo giá rõ ràng, không phát sinh, có bảo hành bằng văn bản.",
   alternates: { canonical: `${BASE_URL}/dich-vu` },

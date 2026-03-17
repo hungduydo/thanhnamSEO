@@ -21,9 +21,9 @@ export type Article = {
 export const ARTICLES: Article[] = [
   {
     slug: "gara-o-to-xuan-loc-chat-luong",
-    title: "Top 13+ Gara Ô Tô Xuân Lộc Đồng Nai Uy Tín & Chất Lượng Nhất 2026",
+    title: "Top 13+ Gara Ô Tô Uy Tín Nhất 2026 TT. Gia Ray Xuân Lộc Đồng Nai ",
     description:
-      "Danh sách 13+ gara ô tô Xuân Lộc Đồng Nai uy tín nhất. Thông tin chi tiết địa chỉ, số điện thoại và dịch vụ của các garage sửa chữa ô tô hàng đầu tại Gia Ray, Xuân Lộc.",
+      "Bạn đang tìm gara ô tô tt. Gia Ray, Xuân Lộc? Xem ngay danh sách 13+ garage sửa chữa ô tô uy tín nhất tại trung tâm Gia Ray với dịch vụ chuyên nghiệp, giá minh bạch.",
     category: "Tiện ích",
     categoryColor: "sky",
     readTime: "10 phút",
@@ -33,18 +33,18 @@ export const ARTICLES: Article[] = [
     content: [
       {
         type: "p",
-        text: "Xuân Lộc là cửa ngõ giao thông quan trọng tại Đồng Nai, nơi tập trung lượng lớn xe cá nhân và xe vận tải. Việc tìm kiếm một địa chỉ sửa chữa xe tin cậy là ưu tiên hàng đầu của các bác tài. Dưới đây là danh sách tổng hợp các gara ô tô Xuân Lộc được khách hàng đánh giá cao nhất hiện nay.",
+        text: "Nếu bạn đang tìm kiếm một địa chỉ 'gara ô tô tt. Gia Ray' uy tín để gửi gắm xế cưng, thì khu vực trung tâm thị trấn Gia Ray, Xuân Lộc là nơi tập trung nhiều cơ sở sửa chữa chất lượng nhất. Với lợi thế nằm ngay trục giao thông chính, các garage tại tt. Gia Ray không chỉ phục vụ cư dân địa phương mà còn là điểm dừng chân tin cậy cho khách vãng lai trên tuyến Quốc lộ 1A.",
       },
       {
         type: "image",
         src: "/images/sua-chua.png",
         alt: "Gara ô tô Xuân Lộc Đồng Nai uy tín",
-        caption: "Thành Nam Oto - Địa chỉ sửa chữa ô tô tin cậy tại Gia Ray, Xuân Lộc",
+        caption: "Thành Nam Auto - Địa chỉ sửa chữa ô tô tin cậy tại Gia Ray, Xuân Lộc",
       },
-      { type: "h2", text: "1. Thành Nam Oto — Chuyên nghiệp & Minh bạch" },
+      { type: "h2", text: "1. Thành Nam Auto — Chuyên nghiệp & Minh bạch" },
       {
         type: "p",
-        text: "Dù mới nhưng Thành Nam Oto đã nhanh chóng khẳng định vị thế nhờ vào quy trình làm việc hiện đại, minh bạch về giá cả và cam kết bảo hành bằng văn bản. Chúng tôi tập trung vào trải nghiệm khách hàng với các tiêu chuẩn khắt khe nhất.",
+        text: "Dù mới nhưng Thành Nam Auto đã nhanh chóng khẳng định vị thế nhờ vào quy trình làm việc hiện đại, minh bạch về giá cả và cam kết bảo hành bằng văn bản. Chúng tôi tập trung vào trải nghiệm khách hàng với các tiêu chuẩn khắt khe nhất.",
       },
       {
         type: "ul",
@@ -123,21 +123,25 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "note",
-        text: "Nếu bạn vẫn đang băn khoăn, hãy ghé Thành Nam Oto tại Trần Nhân Tông, Khu Phố 8, Gia Ray. Chúng tôi hỗ trợ kiểm tra xe và đọc lỗi miễn phí cho tất cả khách hàng mới. Hotline: 0388 476 247.",
+        text: "Nếu bạn vẫn đang băn khoăn, hãy ghé Thành Nam Auto tại Trần Nhân Tông, Khu Phố 8, tt. Gia Ray, Xuân Lộc. Chúng tôi hỗ trợ kiểm tra xe và đọc lỗi miễn phí cho tất cả khách hàng mới. Hotline: 0388 476 247.",
       },
     ],
     faq: [
       {
         question: "Gara ô tô nào uy tín nhất tại Xuân Lộc Đồng Nai?",
-        answer: "Thành Nam Oto tại thị trấn Gia Ray là địa chỉ uy tín hàng đầu, chuyên sửa chữa máy gầm, sơn xe và bảo dưỡng định kỳ với báo giá minh bạch và máy chẩn đoán lỗi hiện đại.",
+        answer: "Thành Nam Auto tại thị trấn Gia Ray là địa chỉ uy tín hàng đầu, chuyên sửa chữa máy gầm, sơn xe và bảo dưỡng định kỳ với báo giá minh bạch và máy chẩn đoán lỗi hiện đại.",
       },
       {
         question: "Chi phí sửa chữa tại các garage Xuân Lộc có đắt không?",
-        answer: "Mức giá tại Xuân Lộc thường cạnh tranh hơn so với các thành phố lớn. Tuy nhiên, bạn nên chọn các gara có báo giá rõ ràng trước khi sửa chữa như Thành Nam Oto để tránh phát sinh chi phí.",
+        answer: "Mức giá tại Xuân Lộc thường cạnh tranh hơn so với các thành phố lớn. Tuy nhiên, bạn nên chọn các gara có báo giá rõ ràng trước khi sửa chữa như Thành Nam Auto để tránh phát sinh chi phí.",
       },
       {
-        question: "Nên bảo dưỡng ô tô ở đâu tại Gia Ray?",
-        answer: "Các bác tài tại Gia Ray thường tin tưởng Ngọc Thạch Auto, Viễn Đông Auto hoặc Thành Nam Oto vì vị trí thuận tiện và đội ngũ thợ tay nghề cao.",
+        question: "Gara ô tô nào uy tín nhất tại tt. Gia Ray, Xuân Lộc?",
+        answer: "Tại trung tâm thị trấn Gia Ray, Thành Nam Auto là địa chỉ được tin tưởng nhờ trang thiết bị hiện đại và vị trí thuận tiện ngay đường Trần Nhân Tông.",
+      },
+      {
+        question: "Có garage nào sửa xe ô tô chuyên nghiệp gần tt. Gia Ray không?",
+        answer: "Xung quanh tt. Gia Ray có nhiều lựa chọn như Ngọc Thạch Auto, Viễn Đông Auto và Thành Nam Auto. Trong đó Thành Nam Auto chuyên sâu về máy gầm và sơn xe công nghệ mới.",
       },
     ],
   },
@@ -155,7 +159,7 @@ export const ARTICLES: Article[] = [
     content: [
       {
         type: "p",
-        text: "Một trong những câu hỏi phổ biến nhất mà khách hàng hỏi chúng tôi tại Thành Nam Oto là: \"Bao lâu thì cần đưa xe đi bảo dưỡng một lần?\" Câu trả lời phụ thuộc vào nhiều yếu tố, nhưng dưới đây là lịch chuẩn mà hầu hết nhà sản xuất và kỹ thuật viên kinh nghiệm đều khuyến nghị.",
+        text: "Một trong những câu hỏi phổ biến nhất mà khách hàng hỏi chúng tôi tại Thành Nam Auto là: \"Bao lâu thì cần đưa xe đi bảo dưỡng một lần?\" Câu trả lời phụ thuộc vào nhiều yếu tố, nhưng dưới đây là lịch chuẩn mà hầu hết nhà sản xuất và kỹ thuật viên kinh nghiệm đều khuyến nghị.",
       },
       { type: "h2", text: "Chu kỳ bảo dưỡng theo số km" },
       {
@@ -190,14 +194,14 @@ export const ARTICLES: Article[] = [
         type: "p",
         text: "Xe đi nhiều trong thành phố (kẹt xe, tăng giảm tốc liên tục) thực ra mài mòn động cơ nhiều hơn xe đường dài. Điều kiện đường phố khiến nhiệt độ động cơ dao động liên tục và nhớt nhanh xuống cấp hơn. Với xe chủ yếu đi trong đô thị, nên rút ngắn chu kỳ thay nhớt khoảng 20–30% so với khuyến nghị.",
       },
-      { type: "h2", text: "Lời khuyên từ Thành Nam Oto" },
+      { type: "h2", text: "Lời khuyên từ Thành Nam Auto" },
       {
         type: "p",
         text: "Đừng chờ xe có vấn đề mới đưa vào gara. Bảo dưỡng định kỳ giúp phát hiện sớm các hư hỏng nhỏ trước khi chúng trở thành vấn đề tốn kém. Nếu bạn đang ở khu vực Đồng Nai, hãy tham khảo ngay danh sách [gara ô tô Xuân Lộc](https://thanhnamoto.com/tin-tuc/gara-o-to-xuan-loc-chat-luong) uy tín để chọn nơi gửi gắm xe tin cậy.",
       },
       {
         type: "note",
-        text: "Tại Thành Nam Oto (Xuân Lộc, Đồng Nai), chúng tôi nhắc lịch bảo dưỡng tự động qua Zalo sau mỗi lần bạn đưa xe vào. Gọi 0388 476 247 để đặt lịch kiểm tra miễn phí.",
+        text: "Tại Thành Nam Auto (tt. Gia Ray, Xuân Lộc, Đồng Nai), chúng tôi nhắc lịch bảo dưỡng tự động qua Zalo sau mỗi lần bạn đưa xe vào. Gọi 0388 476 247 để đặt lịch kiểm tra miễn phí.",
       },
     ],
   },
@@ -244,7 +248,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "note",
-        text: "Gặp bất kỳ dấu hiệu nào trên đây? Đừng chờ thêm. Gọi Thành Nam Oto: 0388 476 247. Chúng tôi là [gara ô tô Xuân Lộc](https://thanhnamoto.com/tin-tuc/gara-o-to-xuan-loc-chat-luong) chuyên nghiệp, kết nối máy đọc lỗi và kiểm tra toàn bộ miễn phí.",
+        text: "Gặp bất kỳ dấu hiệu nào trên đây? Đừng chờ thêm. Gọi Thành Nam Auto: 0388 476 247. Chúng tôi là [gara ô tô Xuân Lộc](https://thanhnamoto.com/tin-tuc/gara-o-to-xuan-loc-chat-luong) chuyên nghiệp, kết nối máy đọc lỗi và kiểm tra toàn bộ miễn phí.",
       },
     ],
   },
@@ -300,7 +304,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "note",
-        text: "Thành Nam Oto thực hiện thay dầu hộp số cho xe số tự động, số sàn, và CVT. Kiểm tra và báo giá miễn phí. Gọi 0388 476 247 hoặc ghé trực tiếp tại Trần Nhân Tông, Khu Phố 8, Xuân Lộc, Đồng Nai.",
+        text: "Thành Nam Auto thực hiện thay dầu hộp số cho xe số tự động, số sàn, và CVT. Kiểm tra và báo giá miễn phí. Gọi 0388 476 247 hoặc ghé trực tiếp tại Trần Nhân Tông, Khu Phố 8, tt. Gia Ray, Xuân Lộc, Đồng Nai.",
       },
     ],
   },
@@ -355,7 +359,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "note",
-        text: "Thành Nam Oto có máy đọc lỗi EPS và thiết bị kiểm tra hệ thống lái. Chẩn đoán miễn phí — báo giá trước khi sửa. Gọi 0388 476 247.",
+        text: "Thành Nam Auto có máy đọc lỗi EPS và thiết bị kiểm tra hệ thống lái. Chẩn đoán miễn phí — báo giá trước khi sửa. Gọi 0388 476 247.",
       },
     ],
   },
@@ -412,11 +416,11 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "Tư vấn trước khi quyết định" },
       {
         type: "p",
-        text: "Tại Thành Nam Oto, chúng tôi luôn khuyến khích khách hàng xem thực tế màu sơn trên xe hoặc bảng màu trước khi quyết định. Với kinh nghiệm là [gara ô tô Xuân Lộc uy tín](https://thanhnamoto.com/tin-tuc/gara-o-to-xuan-loc-chat-luong), chúng tôi cũng cung cấp tư vấn miễn phí về màu nào phù hợp với dòng xe và nhu cầu sử dụng.",
+        text: "Tại Thành Nam Auto, chúng tôi luôn khuyến khích khách hàng xem thực tế màu sơn trên xe hoặc bảng màu trước khi quyết định. Với kinh nghiệm là [gara ô tô Xuân Lộc uy tín](https://thanhnamoto.com/tin-tuc/gara-o-to-xuan-loc-chat-luong), chúng tôi cũng cung cấp tư vấn miễn phí về màu nào phù hợp với dòng xe và nhu cầu sử dụng.",
       },
       {
         type: "note",
-        text: "Muốn sơn đổi màu hoặc sơn dặm xe tại Xuân Lộc? Mang xe đến hoặc gửi ảnh qua Zalo để được tư vấn và báo giá miễn phí. Thành Nam Oto: 0388 476 247.",
+        text: "Muốn sơn đổi màu hoặc sơn dặm xe tại Xuân Lộc? Mang xe đến hoặc gửi ảnh qua Zalo để được tư vấn và báo giá miễn phí. Thành Nam Auto: 0388 476 247.",
       },
     ],
   },

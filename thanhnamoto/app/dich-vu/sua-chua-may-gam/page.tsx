@@ -5,7 +5,7 @@ import { ScrollReveal } from "@/app/components/ScrollReveal"
 import { BASE_URL } from "@/app/lib/constants"
 
 export const metadata: Metadata = {
-  title: "Sửa chữa máy & gầm ô tô tại Xuân Lộc | Thành Nam Oto",
+  title: "Sửa chữa máy & gầm ô tô tại Xuân Lộc | Thành Nam Auto",
   description:
     "Dịch vụ sửa chữa máy, gầm, điện ô tô tại Xuân Lộc, Đồng Nai. Máy chẩn đoán hiện đại, báo giá rõ ràng, không tự ý thay phụ tùng, có bảo hành.",
   alternates: { canonical: `${BASE_URL}/dich-vu/sua-chua-may-gam` },
@@ -107,7 +107,7 @@ export default function SuaChuaMayGamPage() {
               <div className="relative h-64 overflow-hidden rounded-2xl border border-white/8 md:h-96">
                 <Image
                   src="/images/sua-chua.png"
-                  alt="Sửa chữa máy gầm ô tô tại Thành Nam Oto"
+                  alt="Sửa chữa máy gầm ô tô tại Thành Nam Auto"
                   fill
                   sizes="(max-width: 768px) 100vw, 80vw"
                   className="object-cover"
@@ -115,7 +115,7 @@ export default function SuaChuaMayGamPage() {
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-5 pt-16">
                   <p className="text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-emerald-400">
-                    Kiểm tra gầm & máy tại Thành Nam Oto
+                    Kiểm tra gầm & máy tại Thành Nam Auto
                   </p>
                   <p className="mt-0.5 text-xs text-slate-400">Cầu nâng hiện đại, kiểm tra toàn diện bên dưới gầm xe</p>
                 </div>

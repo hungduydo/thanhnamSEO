@@ -5,7 +5,7 @@ import { ScrollReveal } from "@/app/components/ScrollReveal"
 import { BASE_URL } from "@/app/lib/constants"
 
 export const metadata: Metadata = {
-  title: "Bảo dưỡng định kỳ ô tô tại Xuân Lộc | Thành Nam Oto",
+  title: "Bảo dưỡng định kỳ ô tô tại Xuân Lộc | Thành Nam Auto",
   description:
     "Dịch vụ bảo dưỡng định kỳ ô tô tại Xuân Lộc, Đồng Nai. Gói theo mốc km, thay dầu, kiểm tra tổng thể, nhắc lịch định kỳ. Báo giá rõ ràng, có bảo hành.",
   alternates: { canonical: `${BASE_URL}/dich-vu/bao-duong-dinh-ky` },
@@ -130,7 +130,7 @@ export default function BaoDuongDinhKyPage() {
               <div className="relative h-64 overflow-hidden rounded-2xl border border-white/8 md:h-96">
                 <Image
                   src="/images/noi-that.png"
-                  alt="Bảo dưỡng xe ô tô tại Thành Nam Oto"
+                  alt="Bảo dưỡng xe ô tô tại Thành Nam Auto"
                   fill
                   sizes="(max-width: 768px) 100vw, 80vw"
                   className="object-cover"

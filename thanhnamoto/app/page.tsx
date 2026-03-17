@@ -5,7 +5,7 @@ import { LocalBusinessJsonLd } from "./components/LocalBusinessJsonLd"
 import { BASE_URL } from "@/app/lib/constants"
 
 export const metadata: Metadata = {
-  title: "Gara Thành Nam Oto | Sửa chữa & Sơn xe uy tín Xuân Lộc",
+  title: "Gara Thành Nam Auto | Sửa chữa & Sơn xe uy tín Xuân Lộc",
   description:
     "Đặt lịch tư vấn miễn phí. Sửa chữa, sơn xe, bảo dưỡng định kỳ cho xe cá nhân tại Xuân Lộc, Đồng Nai. Báo giá rõ ràng, không phát sinh, bảo hành bằng văn bản.",
   alternates: { canonical: `${BASE_URL}/` },
@@ -379,7 +379,7 @@ export default function Home2Page() {
                 className="font-[family-name:var(--font-display)] font-black uppercase leading-[0.88] text-slate-50 mb-3"
                 style={{ fontSize: "clamp(38px, 7vw, 80px)" }}
               >
-                Tại Thành Nam Oto
+                Tại Thành Nam Auto
                 <br />
                 <span className="text-amber-400">mọi thứ khác biệt</span>
               </h2>
@@ -855,7 +855,7 @@ export default function Home2Page() {
                 </span>
               </h2>
               <p className="mb-3 text-sm leading-relaxed text-slate-400">
-                Thành Nam Oto được xây dựng bởi những người thợ có hơn một thập
+                Thành Nam Auto được xây dựng bởi những người thợ có hơn một thập
                 kỷ kinh nghiệm trong lĩnh vực sửa chữa, sơn xe và chăm sóc ô tô
                 tại Xuân Lộc.
               </p>

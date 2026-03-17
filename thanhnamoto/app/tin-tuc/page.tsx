@@ -5,7 +5,7 @@ import { ARTICLES } from "./_data/articles"
 import { BASE_URL } from "@/app/lib/constants"
 
 export const metadata: Metadata = {
-  title: "Tin tức & Kinh nghiệm chăm sóc xe | Thành Nam Oto Xuân Lộc",
+  title: "Tin tức & Kinh nghiệm chăm sóc xe | Thành Nam Auto Xuân Lộc",
   description:
     "Chia sẻ kiến thức, mẹo vặt về bảo dưỡng, sửa chữa và chăm sóc xe ô tô từ thợ có kinh nghiệm tại Xuân Lộc, Đồng Nai.",
   alternates: { canonical: `${BASE_URL}/tin-tuc` },

@@ -3,7 +3,7 @@ import { BASE_URL } from "@/app/lib/constants"
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "AutoRepair",
-  name: "Thành Nam Oto",
+  name: "Thành Nam Auto",
   description:
     "Gara sửa chữa, sơn xe và bảo dưỡng định kỳ cho xe ô tô cá nhân tại Xuân Lộc, Đồng Nai. Báo giá rõ ràng, không phát sinh, bảo hành bằng văn bản.",
   url: BASE_URL,
@@ -13,7 +13,7 @@ const jsonLd = {
   address: {
     "@type": "PostalAddress",
     streetAddress: "Trần Nhân Tông, Khu Phố 8",
-    addressLocality: "Xuân Lộc",
+    addressLocality: "tt. Gia Ray, Xuân Lộc",
     addressRegion: "Đồng Nai",
     postalCode: "76600",
     addressCountry: "VN",
@@ -44,7 +44,7 @@ const jsonLd = {
   currenciesAccepted: "VND",
   areaServed: {
     "@type": "City",
-    name: "Xuân Lộc, Đồng Nai",
+    name: "tt. Gia Ray, Xuân Lộc, Đồng Nai",
   },
   hasMap: "https://maps.google.com/?q=10.918214879920205,107.40338518778738",
 }

@@ -5,7 +5,7 @@ import { ScrollReveal } from "@/app/components/ScrollReveal"
 import { BASE_URL } from "@/app/lib/constants"
 
 export const metadata: Metadata = {
-  title: "Sơn xe ô tô tại Xuân Lộc | Thành Nam Oto",
+  title: "Sơn xe ô tô tại Xuân Lộc | Thành Nam Auto",
   description:
     "Dịch vụ sơn xe ô tô tại Xuân Lộc, Đồng Nai. Sơn dặm, sơn toàn bộ, đổi màu, phủ ceramic. Phòng sơn kín, màu chuẩn theo code, bảo hành sau bàn giao.",
   alternates: { canonical: `${BASE_URL}/dich-vu/son-xe-o-to` },
@@ -128,7 +128,7 @@ export default function SonXeOToPage() {
               <div className="relative h-64 overflow-hidden rounded-2xl border border-white/8 md:h-96">
                 <Image
                   src="/images/son-xe.png"
-                  alt="Phòng sơn xe ô tô tại Thành Nam Oto"
+                  alt="Phòng sơn xe ô tô tại Thành Nam Auto"
                   fill
                   sizes="(max-width: 768px) 100vw, 80vw"
                   className="object-cover"
@@ -136,7 +136,7 @@ export default function SonXeOToPage() {
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-5 pt-16">
                   <p className="text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-amber-400">
-                    Phòng sơn khép kín tại Thành Nam Oto
+                    Phòng sơn khép kín tại Thành Nam Auto
                   </p>
                   <p className="mt-0.5 text-xs text-slate-400">Kiểm soát bụi, ánh sáng chuẩn để đánh giá màu chính xác</p>
                 </div>

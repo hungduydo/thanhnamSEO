@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { BASE_URL } from "@/app/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Liên hệ Gara Thành Nam Oto | Xuân Lộc, Đồng Nai",
-  description: "Thông tin liên hệ, địa chỉ và bản đồ dẫn đường đến Gara Thành Nam Oto tại Xuân Lộc, Đồng Nai.",
+  title: "Liên hệ Gara Thành Nam Auto | Xuân Lộc, Đồng Nai",
+  description: "Thông tin liên hệ, địa chỉ và bản đồ dẫn đường đến Gara Thành Nam Auto tại Xuân Lộc, Đồng Nai.",
   alternates: { canonical: `${BASE_URL}/lien-he` },
 };
 
@@ -11,7 +11,7 @@ export default function LienHePage() {
   return (
     <main className="mx-auto flex min-h-screen max-w-3xl flex-col gap-6 px-4 py-16">
       <h1 className="text-3xl font-semibold text-zinc-900">
-        Liên hệ Thành Nam Oto
+        Liên hệ Thành Nam Auto
       </h1>
       <p className="text-zinc-700">
         Trang này sẽ chứa bản đồ, form đặt lịch và các nút hành động như &quot;Gọi

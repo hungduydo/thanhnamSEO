@@ -25,7 +25,7 @@ const barlowCondensed = Barlow_Condensed({
 });
 
 const SITE_URL = BASE_URL;
-const DEFAULT_TITLE = "Gara sửa chữa & chăm sóc ô tô | Thành Nam Oto Xuân Lộc";
+const DEFAULT_TITLE = "Gara sửa chữa & chăm sóc ô tô | Thành Nam Auto Xuân Lộc";
 const DEFAULT_DESC =
   "Gara sửa chữa, sơn xe và bảo dưỡng định kỳ cho xe ô tô cá nhân tại Xuân Lộc, Đồng Nai. Báo giá rõ ràng, không phát sinh, có bảo hành bằng văn bản.";
 
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   title: DEFAULT_TITLE,
   description: DEFAULT_DESC,
   openGraph: {
-    siteName: "Thành Nam Oto",
+    siteName: "Thành Nam Auto",
     locale: "vi_VN",
     type: "website",
     title: DEFAULT_TITLE,
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
         url: "/og-default.jpg", // TODO: replace with a real 1200×630 OG image
         width: 1200,
         height: 630,
-        alt: "Thành Nam Oto — Gara sửa chữa & chăm sóc ô tô Xuân Lộc",
+        alt: "Thành Nam Auto — Gara sửa chữa & chăm sóc ô tô Xuân Lộc",
       },
     ],
   },
@@ -74,7 +74,7 @@ export default function RootLayout({
                 <div className="relative h-10 w-10 overflow-hidden rounded-full border border-amber-400/60 bg-black/60 shadow-[0_0_18px_rgba(0,0,0,0.9)]">
                   <Image
                     src="/logo.png"
-                    alt="Thành Nam Oto Logo"
+                    alt="Thành Nam Auto Logo"
                     fill
                     className="object-cover"
                     priority
@@ -82,7 +82,7 @@ export default function RootLayout({
                 </div>
                 <div className="flex flex-col">
                   <span className="text-sm font-semibold tracking-wide">
-                    Thành Nam Oto
+                    Thành Nam Auto
                   </span>
                   <span className="text-xs text-slate-400">
                     Gara sửa chữa &amp; chăm sóc ô tô cá nhân
@@ -143,13 +143,13 @@ export default function RootLayout({
                   <div className="relative h-10 w-10 overflow-hidden rounded-full border border-white/10 bg-black/60 shadow-[0_0_18px_rgba(0,0,0,0.9)]">
                     <Image
                       src="/logo.png"
-                      alt="Thành Nam Oto Logo"
+                      alt="Thành Nam Auto Logo"
                       fill
                       className="object-cover"
                     />
                   </div>
                   <h2 className="text-base font-semibold text-slate-50">
-                    Thành Nam Oto
+                    Thành Nam Auto
                   </h2>
                 </Link>
                 <p className="mt-2 max-w-sm text-sm text-slate-400">
@@ -158,7 +158,7 @@ export default function RootLayout({
                 </p>
               </div>
               <div className="space-y-1">
-                <p>Địa chỉ: Trần Nhân Tông, Khu Phố 8, Xuân Lộc, Đồng Nai</p>
+                <p>Địa chỉ: Trần Nhân Tông, Khu Phố 8, tt. Gia Ray, Xuân Lộc, Đồng Nai</p>
                 <p>Điện thoại: 0388 476 247</p>
                 <p>Giờ làm việc: 08:00 – 17:30 (Thứ 2 – Chủ nhật)</p>
               </div>
@@ -180,7 +180,7 @@ export default function RootLayout({
               </div>
             </div>
             <p className="mt-6 text-center text-xs text-slate-500">
-              © {new Date().getFullYear()} Thành Nam Oto. Website tối ưu với
+              © {new Date().getFullYear()} Thành Nam Auto. Website tối ưu với
               Next.js &amp; Vercel.
             </p>
           </footer>
