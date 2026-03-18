@@ -255,7 +255,7 @@ export default function DichVuPage() {
                   📞 Gọi ngay: 0388 476 247
                 </a>
                 <Link
-                  href="/home2#dat-lich"
+                  href="/lien-he"
                   className="inline-flex items-center gap-2 rounded-full border border-slate-600/80 bg-white/5 px-7 py-3 text-sm font-semibold text-slate-50 backdrop-blur transition-all hover:border-amber-400/50"
                 >
                   Đặt lịch online →

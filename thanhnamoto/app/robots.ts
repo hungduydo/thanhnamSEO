@@ -10,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/home2/", "/hero-v1/", "/hero-v2/", "/hero-v3/"],
+      disallow: ["/hero-v1/", "/hero-v2/", "/hero-v3/"],
     },
     sitemap: `${BASE_URL}/sitemap.xml`,
   }
