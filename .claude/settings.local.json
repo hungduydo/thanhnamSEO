@@ -6,7 +6,8 @@
       "Skill(marketing-skills:seo-audit)",
       "WebFetch(domain:thanhnamoto.com)",
       "Bash(git add thanhnamoto/app/layout.tsx thanhnamoto/app/tin-tuc/[slug]/page.tsx thanhnamoto/public/og-default.jpg thanhnamoto/public/og-default.png)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "WebSearch"
     ]
   },
   "enabledPlugins": {

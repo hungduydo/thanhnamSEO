@@ -261,6 +261,62 @@ export default function BaoDuongDinhKyPage() {
           </div>
         </section>
 
+        {/* ── FAQ ── */}
+        <section className="relative overflow-hidden py-12 px-4 md:py-20 md:px-12 lg:px-20">
+          <div className="pointer-events-none absolute left-0 right-0 top-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(56,189,248,0.2) 50%, transparent)" }} aria-hidden />
+          <div className="mx-auto max-w-6xl">
+            <ScrollReveal>
+              <div className="mb-4 flex items-center gap-3">
+                <div className="h-px w-10 bg-sky-400" />
+                <span className="text-[0.62rem] font-semibold uppercase tracking-[0.38em] text-sky-400">Câu hỏi thường gặp</span>
+              </div>
+              <h2
+                className="font-[family-name:var(--font-display)] font-black uppercase leading-[0.88] text-slate-50 mb-10"
+                style={{ fontSize: "clamp(32px, 5.5vw, 64px)" }}
+              >
+                Khách hàng
+                <br />
+                <span className="text-sky-400">hay hỏi gì?</span>
+              </h2>
+            </ScrollReveal>
+            <div className="grid gap-4 md:grid-cols-2">
+              {[
+                {
+                  q: "Bao lâu nên bảo dưỡng ô tô một lần?",
+                  a: "Thông thường nên bảo dưỡng theo mốc 5.000 km hoặc 3 tháng, tùy cái nào đến trước. Xe đi nhiều, chạy đường bụi hoặc đường đồi núi nên bảo dưỡng sớm hơn. Thành Nam Auto sẽ nhắc lịch bảo dưỡng tiếp theo dựa trên km thực tế của xe bạn sau mỗi lần bảo dưỡng.",
+                },
+                {
+                  q: "Thay dầu ô tô bao nhiêu km một lần?",
+                  a: "Dầu khoáng thay mỗi 5.000 km, dầu tổng hợp bán phần mỗi 7.000–8.000 km, dầu tổng hợp hoàn toàn mỗi 10.000 km. Ngoài ra cần kết hợp thay lọc dầu mỗi lần thay dầu động cơ. Kỹ thuật viên sẽ tư vấn loại dầu phù hợp với dòng xe và điều kiện sử dụng của bạn.",
+                },
+                {
+                  q: "Bảo dưỡng định kỳ có cần đặt lịch trước không?",
+                  a: "Nên đặt lịch trước qua điện thoại hoặc Zalo để chúng tôi chuẩn bị đúng loại dầu và phụ tùng theo dòng xe của bạn, tránh chờ đợi. Trong trường hợp cấp thiết, bạn có thể mang xe đến trực tiếp — chúng tôi sẽ sắp xếp phục vụ trong thời gian sớm nhất.",
+                },
+                {
+                  q: "Ngoài thay dầu, bảo dưỡng còn kiểm tra những gì?",
+                  a: "Tùy gói, nhưng thường bao gồm kiểm tra áp suất lốp, hệ thống phanh, đèn chiếu sáng, gạt mưa, nước làm mát, dầu thắng, ắc quy, hệ thống lái và toàn bộ gầm xe. Gói 20.000 km còn bao gồm kiểm tra bugi, dây curoa, lọc gió và vệ sinh kim phun nhiên liệu.",
+                },
+                {
+                  q: "Nếu phát hiện lỗi ngoài gói bảo dưỡng thì sao?",
+                  a: "Chúng tôi sẽ thông báo ngay cho bạn, giải thích tình trạng và báo giá sửa chữa bổ sung. Không có hạng mục nào được thực hiện nếu chưa có sự đồng ý của chủ xe. Bạn hoàn toàn có thể chọn xử lý sau hoặc ở nơi khác — chúng tôi không ép buộc.",
+                },
+                {
+                  q: "Xe mới mua đã bảo hành hãng có cần bảo dưỡng bên ngoài không?",
+                  a: "Xe mới trong thời gian bảo hành hãng nên bảo dưỡng tại đại lý chính hãng để không ảnh hưởng bảo hành. Sau khi hết bảo hành hãng, bảo dưỡng tại Thành Nam Auto giúp tiết kiệm chi phí mà vẫn đảm bảo chất lượng với phụ tùng đúng chủng loại theo khuyến cáo nhà sản xuất.",
+                },
+              ].map((faq, i) => (
+                <ScrollReveal key={i} delay={i * 60}>
+                  <div className="rounded-2xl border border-sky-400/15 bg-black/40 p-5 backdrop-blur">
+                    <h3 className="mb-2 text-sm font-semibold leading-snug text-slate-50">{faq.q}</h3>
+                    <p className="text-sm leading-relaxed text-slate-400">{faq.a}</p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* ── CTA ── */}
         <section id="dat-lich" className="relative overflow-hidden py-16 px-4 md:py-24 md:px-12 lg:px-20">
           <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(ellipse 60% 40% at 50% 80%, rgba(56,189,248,0.05) 0%, transparent 70%)" }} aria-hidden />

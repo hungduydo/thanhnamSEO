@@ -242,6 +242,62 @@ export default function SonXeOToPage() {
           </div>
         </section>
 
+        {/* ── FAQ ── */}
+        <section className="relative overflow-hidden py-12 px-4 md:py-20 md:px-12 lg:px-20">
+          <div className="pointer-events-none absolute left-0 right-0 top-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(245,158,11,0.2) 50%, transparent)" }} aria-hidden />
+          <div className="mx-auto max-w-6xl">
+            <ScrollReveal>
+              <div className="mb-4 flex items-center gap-3">
+                <div className="h-px w-10 bg-amber-400" />
+                <span className="text-[0.62rem] font-semibold uppercase tracking-[0.38em] text-amber-400">Câu hỏi thường gặp</span>
+              </div>
+              <h2
+                className="font-[family-name:var(--font-display)] font-black uppercase leading-[0.88] text-slate-50 mb-10"
+                style={{ fontSize: "clamp(32px, 5.5vw, 64px)" }}
+              >
+                Khách hàng
+                <br />
+                <span className="text-amber-400">hay hỏi gì?</span>
+              </h2>
+            </ScrollReveal>
+            <div className="grid gap-4 md:grid-cols-2">
+              {[
+                {
+                  q: "Sơn xe ô tô tại Thành Nam Auto mất bao lâu?",
+                  a: "Tùy hạng mục. Sơn dặm vết trầy nhỏ thường hoàn thành trong 1 ngày. Sơn lại toàn bộ xe hoặc đổi màu mất từ 3–5 ngày làm việc để đảm bảo đủ thời gian sơn lót, sơn màu, sơn bóng và kiểm tra màu dưới ánh sáng tự nhiên trước khi bàn giao.",
+                },
+                {
+                  q: "Màu sơn có đúng với màu gốc của xe không?",
+                  a: "Có. Chúng tôi pha màu theo đúng mã màu (color code) ghi trên xe, đảm bảo màu sơn mới hòa với màu cũ tự nhiên. Trước khi sơn, kỹ thuật viên sẽ đối chiếu màu pha với màu gốc dưới ánh sáng thực tế để bạn xác nhận.",
+                },
+                {
+                  q: "Sơn xe tại Thành Nam Auto có bảo hành không?",
+                  a: "Có. Mỗi lần sơn đều đi kèm phiếu bảo hành bằng văn bản. Nếu sơn bong, phồng rộp hoặc lỗi màu trong thời gian bảo hành, chúng tôi xử lý lại miễn phí. Thời hạn bảo hành cụ thể được ghi rõ trên phiếu bàn giao.",
+                },
+                {
+                  q: "Tôi có thể rửa xe ngay sau khi sơn không?",
+                  a: "Không nên rửa xe trong 7–10 ngày đầu sau khi sơn để lớp sơn đủ thời gian đóng rắn hoàn toàn. Tránh tiếp xúc với nước mưa axit, phân chim và ánh nắng trực tiếp trong tuần đầu. Kỹ thuật viên sẽ hướng dẫn chi tiết khi bàn giao xe.",
+                },
+                {
+                  q: "Chi phí sơn xe ô tô tại Xuân Lộc, Đồng Nai là bao nhiêu?",
+                  a: "Chi phí phụ thuộc vào hạng mục: sơn dặm vết nhỏ có giá khác với sơn toàn bộ hay đổi màu xe. Chúng tôi kiểm tra xe thực tế và báo giá chi tiết từng hạng mục trước khi tiến hành — không phát sinh chi phí ngoài báo giá đã thỏa thuận.",
+                },
+                {
+                  q: "Phủ ceramic khác gì so với sơn thông thường?",
+                  a: "Phủ ceramic là lớp bảo vệ nano phủ lên bề mặt sơn gốc, không thay thế sơn. Lớp ceramic giúp tăng độ bóng, chống trầy xước nhẹ, đẩy nước và chống tia UV, kéo dài tuổi thọ lớp sơn bên dưới. Thích hợp cho xe mới hoặc xe vừa sơn lại muốn bảo vệ lâu dài.",
+                },
+              ].map((faq, i) => (
+                <ScrollReveal key={i} delay={i * 60}>
+                  <div className="rounded-2xl border border-amber-400/15 bg-black/40 p-5 backdrop-blur">
+                    <h3 className="mb-2 text-sm font-semibold leading-snug text-slate-50">{faq.q}</h3>
+                    <p className="text-sm leading-relaxed text-slate-400">{faq.a}</p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* ── CTA ── */}
         <section id="dat-lich" className="relative overflow-hidden py-16 px-4 md:py-24 md:px-12 lg:px-20">
           <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(ellipse 60% 40% at 50% 80%, rgba(245,158,11,0.06) 0%, transparent 70%)" }} aria-hidden />

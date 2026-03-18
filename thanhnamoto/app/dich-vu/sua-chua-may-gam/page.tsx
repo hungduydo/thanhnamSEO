@@ -221,6 +221,62 @@ export default function SuaChuaMayGamPage() {
           </div>
         </section>
 
+        {/* ── FAQ ── */}
+        <section className="relative overflow-hidden py-12 px-4 md:py-20 md:px-12 lg:px-20">
+          <div className="pointer-events-none absolute left-0 right-0 top-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(16,185,129,0.2) 50%, transparent)" }} aria-hidden />
+          <div className="mx-auto max-w-6xl">
+            <ScrollReveal>
+              <div className="mb-4 flex items-center gap-3">
+                <div className="h-px w-10 bg-emerald-400" />
+                <span className="text-[0.62rem] font-semibold uppercase tracking-[0.38em] text-emerald-400">Câu hỏi thường gặp</span>
+              </div>
+              <h2
+                className="font-[family-name:var(--font-display)] font-black uppercase leading-[0.88] text-slate-50 mb-10"
+                style={{ fontSize: "clamp(32px, 5.5vw, 64px)" }}
+              >
+                Khách hàng
+                <br />
+                <span className="text-emerald-400">hay hỏi gì?</span>
+              </h2>
+            </ScrollReveal>
+            <div className="grid gap-4 md:grid-cols-2">
+              {[
+                {
+                  q: "Đèn check engine sáng có nguy hiểm không?",
+                  a: "Đèn check engine sáng là tín hiệu cảnh báo từ hệ thống OBD2 của xe, báo hiệu có lỗi ở một hoặc nhiều cảm biến hay bộ phận. Không phải lúc nào cũng nguy hiểm ngay lập tức, nhưng không nên bỏ qua. Mang xe đến để kết nối máy đọc lỗi — chúng tôi xác định nguyên nhân chính xác và tư vấn phương án xử lý.",
+                },
+                {
+                  q: "Xe bị rung vô lăng khi phanh là lỗi gì?",
+                  a: "Rung vô lăng khi phanh thường do đĩa phanh bị vênh hoặc má phanh mòn không đều. Đây là lỗi ảnh hưởng trực tiếp đến an toàn lái xe, nên kiểm tra và xử lý sớm. Kỹ thuật viên sẽ kiểm tra toàn bộ hệ thống phanh và tư vấn thay thế đúng phụ tùng theo dòng xe.",
+                },
+                {
+                  q: "Sửa máy ô tô có cần đặt lịch trước không?",
+                  a: "Nên gọi trước để chúng tôi chuẩn bị cầu nâng và máy chẩn đoán. Tuy nhiên, nếu xe hỏng đột xuất giữa đường, hãy gọi ngay — chúng tôi hỗ trợ cứu hộ và sắp xếp tiếp nhận xe ưu tiên. Số điện thoại: 0388 476 247.",
+                },
+                {
+                  q: "Thời gian sửa chữa máy ô tô mất bao lâu?",
+                  a: "Tùy mức độ hỏng hóc. Các lỗi điện đơn giản hoặc thay phụ tùng có sẵn thường hoàn thành trong ngày. Sửa động cơ phức tạp hoặc cần đặt phụ tùng theo xe có thể mất 2–5 ngày. Chúng tôi thông báo tiến độ rõ ràng và liên hệ ngay khi có phát sinh để bạn chủ động sắp xếp.",
+                },
+                {
+                  q: "Có thể tự thay phụ tùng mang đến nhờ lắp không?",
+                  a: "Được. Nếu bạn đã mua phụ tùng, chúng tôi nhận lắp đặt và kiểm tra sau khi lắp. Tuy nhiên, chúng tôi khuyến cáo dùng phụ tùng đúng chủng loại theo khuyến cáo nhà sản xuất. Nếu không chắc, hãy để chúng tôi tư vấn và cung cấp phụ tùng — đảm bảo tương thích và có bảo hành.",
+                },
+                {
+                  q: "Sau khi sửa có bảo hành không?",
+                  a: "Có. Mỗi hạng mục sửa chữa đều đi kèm phiếu bảo hành ghi rõ thời hạn. Nếu trong thời gian bảo hành xe tái phát lỗi cũ liên quan đến hạng mục đã sửa, chúng tôi kiểm tra và xử lý miễn phí. Phiếu bảo hành được bàn giao cùng với xe sau khi hoàn tất sửa chữa.",
+                },
+              ].map((faq, i) => (
+                <ScrollReveal key={i} delay={i * 60}>
+                  <div className="rounded-2xl border border-emerald-400/15 bg-black/40 p-5 backdrop-blur">
+                    <h3 className="mb-2 text-sm font-semibold leading-snug text-slate-50">{faq.q}</h3>
+                    <p className="text-sm leading-relaxed text-slate-400">{faq.a}</p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* ── CTA ── */}
         <section id="dat-lich" className="relative overflow-hidden py-16 px-4 md:py-24 md:px-12 lg:px-20">
           <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(ellipse 60% 40% at 50% 80%, rgba(16,185,129,0.05) 0%, transparent 70%)" }} aria-hidden />
