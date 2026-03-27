@@ -94,9 +94,10 @@ export async function POST(req: NextRequest) {
     addRandomSuffix: false,
   })
 
-  // Revalidate cache so new article appears immediately
+  // Revalidate cache so new article appears immediately + sitemap updated
   revalidatePath("/tin-tuc", "page")
   revalidatePath("/tin-tuc/[slug]", "page")
+  revalidatePath("/sitemap.xml")
 
   return NextResponse.json(
     {

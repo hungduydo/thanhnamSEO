@@ -1,4 +1,4 @@
-import { revalidatePath } from 'next/cache';
+import { revalidatePath } from "next/cache"
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(req: NextRequest) {
@@ -15,21 +15,16 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    // Revalidate article list page
     revalidatePath('/tin-tuc', 'page');
-
-    // Revalidate all article detail pages
     revalidatePath('/tin-tuc/[slug]', 'page');
+    revalidatePath('/sitemap.xml');
 
     return NextResponse.json(
       {
         success: true,
         message: 'Articles cache revalidated successfully',
         revalidatedAt: new Date().toISOString(),
-        paths: [
-          '/tin-tuc',
-          '/tin-tuc/[slug]'
-        ]
+        paths: ['/tin-tuc', '/tin-tuc/[slug]', '/sitemap.xml'],
       },
       { status: 200 }
     );
