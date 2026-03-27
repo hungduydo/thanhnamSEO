@@ -1,0 +1,70 @@
+{
+  "slug": "bao-duong-xe-bao-lau-mot-lan",
+  "title": "Bảo dưỡng xe bao lâu một lần? Lịch chuẩn theo km & thời gian",
+  "description": "Hướng dẫn lịch bảo dưỡng xe ô tô chuẩn theo km và thời gian. Biết khi nào cần thay nhớt, kiểm tra phanh, và các hạng mục quan trọng để xe luôn an toàn.",
+  "category": "Bảo dưỡng",
+  "categoryColor": "sky",
+  "readTime": "5 phút",
+  "date": "2026-03-01",
+  "excerpt": "Nhiều chủ xe không biết chính xác khi nào cần bảo dưỡng. Bài viết này tóm gọn lịch chuẩn theo km và thời gian để xe luôn vận hành tốt.",
+  "content": [
+    {
+      "type": "p",
+      "text": "Một trong những câu hỏi phổ biến nhất mà khách hàng hỏi chúng tôi tại Thành Nam Auto là: \"Bao lâu thì cần đưa xe đi bảo dưỡng một lần?\" Câu trả lời phụ thuộc vào nhiều yếu tố, nhưng dưới đây là lịch chuẩn mà hầu hết nhà sản xuất và kỹ thuật viên kinh nghiệm đều khuyến nghị."
+    },
+    {
+      "type": "h2",
+      "text": "Chu kỳ bảo dưỡng theo số km"
+    },
+    {
+      "type": "p",
+      "text": "Đây là cách tính phổ biến và chính xác nhất. Hầu hết xe hiện đại áp dụng mốc bảo dưỡng theo cây số:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "5.000 km: Thay nhớt máy (xe dùng dầu khoáng hoặc semi-synthetic), kiểm tra lọc gió, lốp xe.",
+        "10.000 km: Thay nhớt (xe dùng nhớt tổng hợp full synthetic), kiểm tra phanh, bugi, dây đai.",
+        "20.000 km: Thay lọc gió điều hòa, kiểm tra hệ thống làm mát, nước rửa kính.",
+        "40.000–50.000 km: Kiểm tra dây cam, bơm nước, kiểm tra toàn bộ gầm xe.",
+        "80.000–100.000 km: Thay dây cam (một số động cơ), đại tu hệ thống phanh, kiểm tra hộp số."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Bảo dưỡng theo thời gian"
+    },
+    {
+      "type": "p",
+      "text": "Nếu xe không chạy nhiều, thời gian cũng là yếu tố quan trọng không kém. Nhớt máy bị oxy hóa và giảm tác dụng theo thời gian, dù xe ít lăn bánh:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Tối thiểu mỗi 6 tháng: Kiểm tra nhớt, nước bình, áp suất lốp.",
+        "Hàng năm: Thay nhớt (dù chưa đủ km), kiểm tra hệ thống điện, acquy.",
+        "Mỗi 2 năm: Kiểm tra dầu phanh, dầu trợ lực, chất lỏng làm mát."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Xe thành phố và xe đường dài — khác nhau như thế nào?"
+    },
+    {
+      "type": "p",
+      "text": "Xe đi nhiều trong thành phố (kẹt xe, tăng giảm tốc liên tục) thực ra mài mòn động cơ nhiều hơn xe đường dài. Điều kiện đường phố khiến nhiệt độ động cơ dao động liên tục và nhớt nhanh xuống cấp hơn. Với xe chủ yếu đi trong đô thị, nên rút ngắn chu kỳ thay nhớt khoảng 20–30% so với khuyến nghị."
+    },
+    {
+      "type": "h2",
+      "text": "Lời khuyên từ Thành Nam Auto"
+    },
+    {
+      "type": "p",
+      "text": "Đừng chờ xe có vấn đề mới đưa vào gara. Bảo dưỡng định kỳ giúp phát hiện sớm các hư hỏng nhỏ trước khi chúng trở thành vấn đề tốn kém. Nếu bạn đang ở khu vực Đồng Nai, hãy tham khảo ngay danh sách [gara ô tô Xuân Lộc](https://thanhnamoto.com/tin-tuc/gara-o-to-xuan-loc-chat-luong) uy tín để chọn nơi gửi gắm xe tin cậy."
+    },
+    {
+      "type": "note",
+      "text": "Tại Thành Nam Auto (tt. Gia Ray, Xuân Lộc, Đồng Nai), chúng tôi nhắc lịch bảo dưỡng tự động qua Zalo sau mỗi lần bạn đưa xe vào. Gọi 0388 476 247 để đặt lịch kiểm tra miễn phí."
+    }
+  ]
+}

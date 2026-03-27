@@ -1,12 +1,12 @@
 import type { MetadataRoute } from "next"
-import { getArticleSlugs } from "./tin-tuc/_data/articles"
+import { getArticles } from "./tin-tuc/_data/articles"
 import { BASE_URL as SITE_BASE_URL } from "@/app/lib/constants"
 
 const BASE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
   SITE_BASE_URL
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   /* ── Static pages ─────────────────────────────────────────── */
   const staticPages: MetadataRoute.Sitemap = [
     {
@@ -59,10 +59,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  /* ── Dynamic blog articles ────────────────────────────────── */
-  const articlePages: MetadataRoute.Sitemap = getArticleSlugs().map((slug: string) => ({
-    url: `${BASE_URL}/tin-tuc/${slug}`,
-    lastModified: new Date(),
+  /* ── Dynamic blog articles (static + Blob-created) ──────── */
+  const articles = await getArticles()
+  const articlePages: MetadataRoute.Sitemap = articles.map((a) => ({
+    url: `${BASE_URL}/tin-tuc/${a.slug}`,
+    lastModified: new Date(a.date),
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }))

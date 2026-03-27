@@ -1,0 +1,65 @@
+{
+  "slug": "dau-hieu-thuoc-lai-bi-hong",
+  "title": "Dấu hiệu thước lái bị hỏng và cách xử lý kịp thời",
+  "description": "Vô lăng nặng, xe bị lệch hướng, hoặc tiếng ồn khi đánh lái — đây có thể là dấu hiệu thước lái đang có vấn đề. Biết cách nhận biết sớm để tránh nguy hiểm.",
+  "category": "Sửa chữa",
+  "categoryColor": "emerald",
+  "readTime": "4 phút",
+  "date": "2026-01-25",
+  "excerpt": "Vô lăng nặng tay hoặc xe không đi thẳng? Đây có thể là hệ thống lái đang có vấn đề — ảnh hưởng trực tiếp đến an toàn lái xe.",
+  "content": [
+    {
+      "type": "p",
+      "text": "Hệ thống lái là bộ phận quan trọng nhất ảnh hưởng đến khả năng kiểm soát xe. Khi thước lái hoặc hệ thống trợ lực gặp vấn đề, khả năng điều khiển xe bị suy giảm đáng kể — đây là vấn đề an toàn cần xử lý ngay, không nên để chờ."
+    },
+    {
+      "type": "h2",
+      "text": "Các dấu hiệu thường gặp"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Vô lăng nặng tay bất thường — đặc biệt khi vào cua hay đánh lái ở tốc độ chậm.",
+        "Xe không đi thẳng, cứ bị kéo về một bên khi chạy trên đường bằng phẳng.",
+        "Tiếng ồn \"gõ\" hoặc \"cọ\" khi xoay vô lăng — nhất là ở vị trí khóa.",
+        "Vô lăng rung khi chạy tốc độ cao.",
+        "Dầu trợ lực bị rò rỉ (vệt dầu dưới xe, gần khu vực vô lăng).",
+        "Vị trí trung tâm vô lăng bị lệch khi xe đi thẳng."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Nguyên nhân phổ biến"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Dầu trợ lực thiếu hoặc bị rò rỉ (xe dùng trợ lực thủy lực).",
+        "Bơm trợ lực lái yếu hoặc hỏng.",
+        "Thước lái mòn hoặc bị tổn thương do va chạm.",
+        "Motor trợ lực điện (EPS) lỗi — phổ biến trên xe đời mới.",
+        "Gioăng cao su lái khô nứt, để nước và bụi vào bên trong."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Phân biệt trợ lực thủy lực và điện (EPS)"
+    },
+    {
+      "type": "p",
+      "text": "Xe đời cũ (trước 2015) thường dùng trợ lực thủy lực (có bình dầu trợ lực). Xe đời mới hầu hết dùng trợ lực điện (EPS) — không có bình dầu. Cách kiểm tra và sửa chữa khác nhau hoàn toàn. Đừng tự thêm dầu trợ lực vào xe dùng EPS — không có tác dụng và có thể gây nhầm lẫn khi chẩn đoán lỗi."
+    },
+    {
+      "type": "h2",
+      "text": "Khi nào cần đi gara ngay?"
+    },
+    {
+      "type": "p",
+      "text": "Nếu vô lăng đột ngột trở nên rất nặng hoặc mất khả năng kiểm soát hướng đi — dừng xe ngay lập tức và gọi cứu hộ. Đây là tình huống nguy hiểm, không nên cố lái tiếp. Với các triệu chứng nhẹ hơn (vô lăng hơi nặng, tiếng kêu nhẹ), vẫn nên đưa xe vào kiểm tra trong tuần, không để quá 2–3 tuần."
+    },
+    {
+      "type": "note",
+      "text": "Thành Nam Auto có máy đọc lỗi EPS và thiết bị kiểm tra hệ thống lái. Chẩn đoán miễn phí — báo giá trước khi sửa. Gọi 0388 476 247."
+    }
+  ]
+}

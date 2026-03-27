@@ -12,10 +12,17 @@ export async function generateStaticParams() {
   return getArticleSlugs().map((slug) => ({ slug }))
 }
 
+export const dynamicParams = true // Allow dynamic rendering of new articles
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
-  const article = getArticle(slug)
-  if (!article) return {}
+  const article = await getArticle(slug)
+  if (!article) {
+    return {
+      title: "Bài viết không tìm thấy | Thành Nam Auto",
+      description: "Bài viết này không tồn tại.",
+    }
+  }
   const url = `${SITE_URL}/tin-tuc/${slug}`
   return {
     title: `${article.title} | Thành Nam Auto`,
@@ -137,7 +144,7 @@ function RenderSection({ section, catColor }: { section: ArticleSection; catColo
 
 export default async function ArticlePage({ params }: Props) {
   const { slug } = await params
-  const article = getArticle(slug)
+  const article = await getArticle(slug)
   if (!article) notFound()
 
   const cat = CATEGORY_STYLES[article.categoryColor]

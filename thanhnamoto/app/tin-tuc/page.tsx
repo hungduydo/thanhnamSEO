@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { ScrollReveal } from "@/app/components/ScrollReveal"
-import { ARTICLES } from "./_data/articles"
+import { getArticles } from "./_data/articles"
 import { BASE_URL } from "@/app/lib/constants"
 import { CONTACT } from "@/app/lib/contact"
 
@@ -35,7 +35,8 @@ function formatDate(iso: string) {
   return d.toLocaleDateString("vi-VN", { day: "2-digit", month: "2-digit", year: "numeric" })
 }
 
-export default function TinTucPage() {
+export default async function TinTucPage() {
+  const ARTICLES = await getArticles()
   return (
     <>
       <style>{`
