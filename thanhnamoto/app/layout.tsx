@@ -34,6 +34,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: DEFAULT_TITLE,
   description: DEFAULT_DESC,
+  verification: {
+    google: "ZD3_CD5TitPRnGZsMDtjTXogS4fmZwV8N1whwU9tbEs",
+  },
   openGraph: {
     siteName: "Thành Nam Auto",
     locale: "vi_VN",
