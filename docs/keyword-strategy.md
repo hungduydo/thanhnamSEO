@@ -98,3 +98,59 @@ Mục tiêu của chiến lược từ khóa là tập trung vào **tìm kiếm 
   - Meta **Title & Description** tương ứng (xem thêm `docs/tech-strategy.md`).
   - Liên kết nội bộ tới các trang dịch vụ phù hợp.
 
+
+---
+
+## 5. Bộ từ khóa cập nhật 2026-05 (sau nghiên cứu cạnh tranh)
+
+Cập nhật sau khi rà soát SERP cho cụm "gara ô tô Xuân Lộc" / "Gia Ray". Đối thủ trực tiếp tại địa phương: Auto Quang Nam, Ngọc Thạch Auto, Viễn Đông Auto, Hùng Vương Auto, Năm Nhân — và các bài tổng hợp "Top gara" của bên thứ ba (donoithatxeoto.com, garageoto.vn) đang chiếm trang 1.
+
+### Tier 1 — Money keywords (dẫn về trang dịch vụ)
+
+| Từ khóa | Trang đích | Ưu tiên |
+|---------|------------|---------|
+| gara ô tô Xuân Lộc | `/` | ⭐⭐⭐ |
+| gara ô tô Gia Ray | `/` | ⭐⭐⭐ |
+| sửa chữa ô tô Xuân Lộc | `/dich-vu/sua-chua-may-gam` | ⭐⭐⭐ |
+| sửa ô tô Gia Ray Đồng Nai | `/dich-vu/sua-chua-may-gam` | ⭐⭐ |
+| bảo dưỡng ô tô Xuân Lộc | `/dich-vu/bao-duong-dinh-ky` | ⭐⭐⭐ |
+| sơn xe ô tô Xuân Lộc | `/dich-vu/son-xe-o-to` | ⭐⭐⭐ |
+| sơn dặm ô tô Gia Ray | `/dich-vu/son-xe-o-to` | ⭐⭐ |
+| gara ô tô gần đây Xuân Lộc | `/` | ⭐⭐ |
+
+### Tier 2 — Dịch vụ chuyên sâu (medium volume)
+
+| Từ khóa | Trang đích |
+|---------|------------|
+| phủ ceramic ô tô Đồng Nai | `/dich-vu/son-xe-o-to` + bài blog `/tin-tuc/phu-ceramic-o-to-co-ben-khong-gia-bao-nhieu` |
+| sơn đổi màu ô tô Xuân Lộc | `/dich-vu/son-xe-o-to` |
+| sửa chữa máy gầm ô tô Gia Ray | `/dich-vu/sua-chua-may-gam` |
+| cứu hộ ô tô Xuân Lộc | bài blog `/tin-tuc/cuu-ho-o-to-xuan-loc-can-lam-gi` |
+| thay nhớt ô tô Gia Ray | `/dich-vu/bao-duong-dinh-ky` |
+
+### Tier 3 — Long-tail informational (dẫn từ blog, kéo về dịch vụ)
+
+| Từ khóa | Bài blog đích |
+|---------|----------------|
+| bao lâu nên bảo dưỡng ô tô | `/tin-tuc/bao-duong-xe-bao-lau-mot-lan` |
+| dấu hiệu xe cần thay nhớt | `/tin-tuc/dau-hieu-xe-o-to-can-thay-nhot` |
+| chi phí sơn lại ô tô bao nhiêu | `/tin-tuc/chi-phi-son-lai-o-to-bao-nhieu-tien` |
+| phủ ceramic ô tô có bền không | `/tin-tuc/phu-ceramic-o-to-co-ben-khong-gia-bao-nhieu` |
+| xe bị rung khi phanh nguyên nhân | `/tin-tuc/xe-bi-rung-khi-phanh-nguyen-nhan` |
+| kinh nghiệm chọn gara sửa ô tô | `/tin-tuc/kinh-nghiem-chon-gara-sua-o-to-uy-tin` |
+| bảng giá bảo dưỡng Toyota/Honda/Hyundai/Kia/Mazda | `/tin-tuc/bang-gia-bao-duong-o-to-toyota-honda-hyundai` |
+| quy trình sơn dặm ô tô | `/tin-tuc/quy-trinh-son-dam-xoa-tray-xuoc-o-to` |
+
+### Quy ước viết title / description mới
+
+- **Title pattern**: `{Từ khóa chính} - {USP ngắn} | Thành Nam Auto`. Đặt từ khóa ở đầu, không dẫn bằng brand.
+- **Description**: 150-160 ký tự, chứa từ khóa chính + địa chỉ (Xuân Lộc / Gia Ray / Đồng Nai) + USP (báo giá rõ ràng / bảo hành) + số điện thoại 0388 476 247.
+- **H1**: 1 H1/trang, chứa từ khóa chính.
+- **Internal link**: mỗi bài blog → ≥1 trang dịch vụ; mỗi trang dịch vụ → ≥2 bài blog liên quan.
+
+### Schema JSON-LD đã triển khai
+
+- `/` — `AutoRepair` (LocalBusiness) + `FAQPage`
+- `/dich-vu/*` — `Service` + `BreadcrumbList`
+- `/tin-tuc/[slug]` — `Article` + `FAQPage` (nếu có) + `BreadcrumbList`
+

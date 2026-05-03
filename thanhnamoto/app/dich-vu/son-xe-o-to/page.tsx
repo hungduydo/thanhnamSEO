@@ -2,14 +2,25 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { ScrollReveal } from "@/app/components/ScrollReveal"
+import { ServiceJsonLd } from "@/app/components/ServiceJsonLd"
+import { BreadcrumbJsonLd } from "@/app/components/BreadcrumbJsonLd"
 import { BASE_URL } from "@/app/lib/constants"
 import { CONTACT } from "@/app/lib/contact"
 
+const SERVICE_NAME = "Sơn xe ô tô Xuân Lộc - Sơn dặm, đổi màu, phủ ceramic"
+const SERVICE_DESC =
+  "Dịch vụ sơn xe ô tô tại Xuân Lộc, Đồng Nai. Sơn dặm xóa trầy xước, sơn lại toàn bộ, đổi màu, phủ ceramic. Phòng sơn kín, màu chuẩn theo code, bảo hành sau bàn giao."
+
 export const metadata: Metadata = {
-  title: "Sơn xe ô tô tại Xuân Lộc | Thành Nam Auto",
-  description:
-    "Dịch vụ sơn xe ô tô tại Xuân Lộc, Đồng Nai. Sơn dặm, sơn toàn bộ, đổi màu, phủ ceramic. Phòng sơn kín, màu chuẩn theo code, bảo hành sau bàn giao.",
+  title: SERVICE_NAME,
+  description: SERVICE_DESC,
   alternates: { canonical: `${BASE_URL}/dich-vu/son-xe-o-to` },
+  openGraph: {
+    title: SERVICE_NAME,
+    description: SERVICE_DESC,
+    url: `${BASE_URL}/dich-vu/son-xe-o-to`,
+    type: "website",
+  },
 }
 
 const VARIANTS = [
@@ -49,6 +60,19 @@ const STEPS = [
 export default function SonXeOToPage() {
   return (
     <>
+      <ServiceJsonLd
+        name={SERVICE_NAME}
+        description={SERVICE_DESC}
+        slug="/dich-vu/son-xe-o-to"
+        serviceType="Sơn xe ô tô"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Trang chủ", path: "/" },
+          { name: "Dịch vụ", path: "/dich-vu" },
+          { name: "Sơn xe ô tô", path: "/dich-vu/son-xe-o-to" },
+        ]}
+      />
       <style>{`
         @keyframes sx-rise {
           from { opacity: 0; transform: translateY(20px); }

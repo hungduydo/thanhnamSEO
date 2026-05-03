@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { ScrollReveal } from "@/app/components/ScrollReveal"
+import { BreadcrumbJsonLd } from "@/app/components/BreadcrumbJsonLd"
 import { getArticle, getArticleSlugs, type ArticleSection } from "../_data/articles"
 import { CONTACT } from "@/app/lib/contact"
 import { BASE_URL as SITE_URL } from "@/app/lib/constants"
@@ -194,6 +195,13 @@ export default async function ArticlePage({ params }: Props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       )}
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Trang chủ", path: "/" },
+          { name: "Tin tức", path: "/tin-tuc" },
+          { name: article.title, path: `/tin-tuc/${article.slug}` },
+        ]}
+      />
       <style>{`
         @keyframes ar-rise {
           from { opacity: 0; transform: translateY(20px); }

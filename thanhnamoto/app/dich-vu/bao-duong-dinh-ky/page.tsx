@@ -2,14 +2,25 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { ScrollReveal } from "@/app/components/ScrollReveal"
+import { ServiceJsonLd } from "@/app/components/ServiceJsonLd"
+import { BreadcrumbJsonLd } from "@/app/components/BreadcrumbJsonLd"
 import { BASE_URL } from "@/app/lib/constants"
 import { CONTACT } from "@/app/lib/contact"
 
+const SERVICE_NAME = "Bảo dưỡng ô tô định kỳ Xuân Lộc - Bảng giá & Quy trình"
+const SERVICE_DESC =
+  "Bảo dưỡng ô tô định kỳ tại Xuân Lộc, Đồng Nai. Gói theo mốc 5.000 / 10.000 / 20.000 km - thay dầu, lọc, kiểm tra tổng thể. Nhắc lịch tự động, báo giá rõ ràng, có bảo hành."
+
 export const metadata: Metadata = {
-  title: "Bảo dưỡng định kỳ ô tô tại Xuân Lộc | Thành Nam Auto",
-  description:
-    "Dịch vụ bảo dưỡng định kỳ ô tô tại Xuân Lộc, Đồng Nai. Gói theo mốc km, thay dầu, kiểm tra tổng thể, nhắc lịch định kỳ. Báo giá rõ ràng, có bảo hành.",
+  title: SERVICE_NAME,
+  description: SERVICE_DESC,
   alternates: { canonical: `${BASE_URL}/dich-vu/bao-duong-dinh-ky` },
+  openGraph: {
+    title: SERVICE_NAME,
+    description: SERVICE_DESC,
+    url: `${BASE_URL}/dich-vu/bao-duong-dinh-ky`,
+    type: "website",
+  },
 }
 
 const PACKAGES = [
@@ -52,6 +63,19 @@ const STEPS = [
 export default function BaoDuongDinhKyPage() {
   return (
     <>
+      <ServiceJsonLd
+        name={SERVICE_NAME}
+        description={SERVICE_DESC}
+        slug="/dich-vu/bao-duong-dinh-ky"
+        serviceType="Bảo dưỡng ô tô định kỳ"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Trang chủ", path: "/" },
+          { name: "Dịch vụ", path: "/dich-vu" },
+          { name: "Bảo dưỡng định kỳ", path: "/dich-vu/bao-duong-dinh-ky" },
+        ]}
+      />
       <style>{`
         @keyframes bd-rise {
           from { opacity: 0; transform: translateY(20px); }

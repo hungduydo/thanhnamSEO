@@ -2,16 +2,23 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import { ScrollReveal } from "./components/ScrollReveal"
 import { LocalBusinessJsonLd } from "./components/LocalBusinessJsonLd"
+import { FAQJsonLd } from "./components/FAQJsonLd"
 import { BASE_URL } from "@/app/lib/constants"
 import { CONTACT } from "@/app/lib/contact"
 
 export const metadata: Metadata = {
-  title: "Gara Thành Nam Auto | Sửa chữa & Sơn xe uy tín Xuân Lộc",
+  title: "Gara ô tô Xuân Lộc Đồng Nai - Sửa chữa, Sơn xe & Bảo dưỡng",
   description:
-    "Đặt lịch tư vấn miễn phí. Sửa chữa, sơn xe, bảo dưỡng định kỳ cho xe cá nhân tại Xuân Lộc, Đồng Nai. Báo giá rõ ràng, không phát sinh, bảo hành bằng văn bản.",
+    "Thành Nam Auto - gara ô tô uy tín tại Gia Ray, Xuân Lộc, Đồng Nai. Sửa chữa máy gầm, sơn xe phòng kín, bảo dưỡng định kỳ. Báo giá rõ ràng, bảo hành. Gọi 0388 476 247.",
   alternates: { canonical: `${BASE_URL}/` },
+  openGraph: {
+    title: "Gara ô tô Xuân Lộc Đồng Nai - Sửa chữa, Sơn xe & Bảo dưỡng",
+    description:
+      "Gara ô tô tại Gia Ray, Xuân Lộc, Đồng Nai. Sửa chữa máy gầm, sơn xe, bảo dưỡng. Báo giá rõ ràng, bảo hành bằng văn bản.",
+    url: `${BASE_URL}/`,
+    type: "website",
+  },
 }
-
 /* ─── data ─────────────────────────────────────────────────── */
 
 const PAIN_POINTS = [
@@ -118,10 +125,39 @@ const STATS = [
 
 /* ─── component ─────────────────────────────────────────────── */
 
+const HOME_FAQ = [
+  {
+    question: "Gara Thành Nam Auto ở đâu tại Xuân Lộc?",
+    answer:
+      "Thành Nam Auto đặt tại đường Trần Nhân Tông, Khu Phố 8, thị trấn Gia Ray, huyện Xuân Lộc, tỉnh Đồng Nai. Mở cửa thứ 2 - Chủ nhật, 08:00-17:30. Liên hệ 0388 476 247.",
+  },
+  {
+    question: "Gara nhận sửa chữa những dòng xe nào?",
+    answer:
+      "Chúng tôi nhận sửa chữa, bảo dưỡng và sơn xe cho mọi dòng xe ô tô cá nhân: Toyota, Honda, Hyundai, Kia, Mazda, Ford, Mitsubishi, Vinfast và xe nhập khẩu. Có máy chẩn đoán OBD2 hỗ trợ đa hãng.",
+  },
+  {
+    question: "Báo giá sửa chữa có rõ ràng không, có phát sinh không?",
+    answer:
+      "Mọi hạng mục đều được báo giá chi tiết bằng văn bản trước khi tiến hành. Khách hàng đồng ý mới làm. Cam kết không phát sinh chi phí ngoài thoả thuận. Nếu phát hiện lỗi mới, chúng tôi sẽ thông báo và xin ý kiến trước khi sửa.",
+  },
+  {
+    question: "Bảo dưỡng định kỳ ô tô bao lâu một lần?",
+    answer:
+      "Thông thường nên bảo dưỡng cấp nhỏ mỗi 5.000 km hoặc 6 tháng (thay dầu máy, lọc dầu), bảo dưỡng cấp lớn mỗi 10.000-20.000 km. Lịch cụ thể tuỳ dòng xe và điều kiện sử dụng - chúng tôi tư vấn miễn phí khi bạn đến gara.",
+  },
+  {
+    question: "Sơn xe ô tô tại Thành Nam Auto có bảo hành không?",
+    answer:
+      "Có. Tất cả dịch vụ sơn xe (sơn dặm, sơn lại toàn bộ, đổi màu, phủ ceramic) đều có phiếu bảo hành bằng văn bản về độ bám màu, đồng màu và chống bong tróc trong điều kiện sử dụng bình thường.",
+  },
+]
+
 export default function Home2Page() {
   return (
     <>
       <LocalBusinessJsonLd />
+      <FAQJsonLd items={HOME_FAQ} />
       {/* Scoped keyframe animations for the hero entrance */}
       <style>{`
         @keyframes h2-rise {

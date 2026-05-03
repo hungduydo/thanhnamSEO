@@ -26,14 +26,38 @@ const barlowCondensed = Barlow_Condensed({
 });
 
 const SITE_URL = BASE_URL;
-const DEFAULT_TITLE = "Gara sửa chữa & chăm sóc ô tô | Thành Nam Auto Xuân Lộc";
+const DEFAULT_TITLE = "Gara ô tô Xuân Lộc Đồng Nai - Sửa chữa, Sơn xe, Bảo dưỡng | Thành Nam Auto";
 const DEFAULT_DESC =
-  "Gara sửa chữa, sơn xe và bảo dưỡng định kỳ cho xe ô tô cá nhân tại Xuân Lộc, Đồng Nai. Báo giá rõ ràng, không phát sinh, có bảo hành bằng văn bản.";
+  "Gara ô tô Xuân Lộc, Đồng Nai chuyên sửa chữa máy gầm, sơn xe phòng kín, bảo dưỡng định kỳ. Báo giá rõ ràng, bảo hành bằng văn bản. Gọi 0388 476 247.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: DEFAULT_TITLE,
+  title: {
+    default: DEFAULT_TITLE,
+    template: "%s | Thành Nam Auto Xuân Lộc",
+  },
   description: DEFAULT_DESC,
+  keywords: [
+    "gara ô tô Xuân Lộc",
+    "gara ô tô Gia Ray",
+    "sửa chữa ô tô Xuân Lộc",
+    "sửa ô tô Gia Ray Đồng Nai",
+    "bảo dưỡng ô tô Xuân Lộc",
+    "sơn xe ô tô Xuân Lộc",
+    "sơn dặm ô tô Gia Ray",
+    "phủ ceramic ô tô Đồng Nai",
+    "gara ô tô gần đây Xuân Lộc",
+    "Thành Nam Auto",
+  ],
+  authors: [{ name: "Thành Nam Auto" }],
+  creator: "Thành Nam Auto",
+  publisher: "Thành Nam Auto",
+  alternates: { canonical: SITE_URL },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
+  },
   verification: {
     google: "ZD3_CD5TitPRnGZsMDtjTXogS4fmZwV8N1whwU9tbEs",
   },
@@ -89,7 +113,7 @@ export default function RootLayout({
                     Thành Nam Auto
                   </span>
                   <span className="text-xs text-slate-400">
-                    Gara sửa chữa &amp; chăm sóc ô tô cá nhân
+                    Gara sửa chữa chăm sóc ô tô cá nhân
                   </span>
                 </div>
               </Link>

@@ -2,14 +2,25 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { ScrollReveal } from "@/app/components/ScrollReveal"
+import { ServiceJsonLd } from "@/app/components/ServiceJsonLd"
+import { BreadcrumbJsonLd } from "@/app/components/BreadcrumbJsonLd"
 import { BASE_URL } from "@/app/lib/constants"
 import { CONTACT } from "@/app/lib/contact"
 
+const SERVICE_NAME = "Sửa chữa máy gầm ô tô Gia Ray, Xuân Lộc - Chẩn đoán bằng máy"
+const SERVICE_DESC =
+  "Sửa chữa máy, gầm, hệ thống điện ô tô tại Gia Ray, Xuân Lộc, Đồng Nai. Máy chẩn đoán OBD2 hiện đại, báo giá rõ ràng từng hạng mục, không tự ý thay phụ tùng, có bảo hành."
+
 export const metadata: Metadata = {
-  title: "Sửa chữa máy & gầm ô tô tại Xuân Lộc | Thành Nam Auto",
-  description:
-    "Dịch vụ sửa chữa máy, gầm, điện ô tô tại Xuân Lộc, Đồng Nai. Máy chẩn đoán hiện đại, báo giá rõ ràng, không tự ý thay phụ tùng, có bảo hành.",
+  title: SERVICE_NAME,
+  description: SERVICE_DESC,
   alternates: { canonical: `${BASE_URL}/dich-vu/sua-chua-may-gam` },
+  openGraph: {
+    title: SERVICE_NAME,
+    description: SERVICE_DESC,
+    url: `${BASE_URL}/dich-vu/sua-chua-may-gam`,
+    type: "website",
+  },
 }
 
 const ISSUES = [
@@ -29,6 +40,19 @@ const STEPS = [
 export default function SuaChuaMayGamPage() {
   return (
     <>
+      <ServiceJsonLd
+        name={SERVICE_NAME}
+        description={SERVICE_DESC}
+        slug="/dich-vu/sua-chua-may-gam"
+        serviceType="Sửa chữa máy gầm ô tô"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Trang chủ", path: "/" },
+          { name: "Dịch vụ", path: "/dich-vu" },
+          { name: "Sửa chữa máy gầm", path: "/dich-vu/sua-chua-may-gam" },
+        ]}
+      />
       <style>{`
         @keyframes sc-rise {
           from { opacity: 0; transform: translateY(20px); }
