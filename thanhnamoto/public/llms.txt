@@ -4,10 +4,15 @@
 
 ## Thông tin doanh nghiệp
 
-- Tên: Thành Nam Oto
-- Địa chỉ: Thị trấn Gia Ray, Xuân Lộc, Đồng Nai, Việt Nam
-- Điện thoại: 0388 476 247
+- Tên: Thành Nam Oto (Gara Thành Nam Auto)
+- Địa chỉ: Trần Nhân Tông, Khu Phố 8, tt. Gia Ray, Xuân Lộc, Đồng Nai, Việt Nam
+- Toạ độ: 10.918215, 107.403385
+- Điện thoại: 0388 476 247 (+84 388 476 247)
+- Zalo: https://zalo.me/0388476247
 - Website: https://thanhnamoto.com
+- Giờ làm việc: Thứ 2 – Thứ 6 07:30–17:30; Thứ 7 07:30–17:00; Chủ nhật 08:00–12:00
+- Khu vực phục vụ: Xuân Lộc, Gia Ray, Long Khánh, Cẩm Mỹ, Định Quán (Đồng Nai) và khu vực dọc Quốc lộ 1A
+- Cam kết: báo giá trước khi làm, bảo hành bằng văn bản, gọi xác nhận trước khi phát sinh hạng mục
 
 ## Dịch vụ
 
@@ -22,3 +27,40 @@
 - [Hình ảnh thực tế](https://thanhnamoto.com/hinh-anh-thuc-te)
 - [Tin tức](https://thanhnamoto.com/tin-tuc)
 - [Liên hệ](https://thanhnamoto.com/lien-he)
+
+## Bài viết hướng dẫn — Chi phí và bảng giá
+
+- [Bảng giá sửa chữa ô tô tại Xuân Lộc, Đồng Nai 2026](https://thanhnamoto.com/tin-tuc/bang-gia-sua-chua-o-to-xuan-loc-dong-nai): Tổng hợp giá tham khảo mọi hạng mục và cách đọc báo giá
+- [Bảng giá bảo dưỡng Toyota, Honda, Hyundai](https://thanhnamoto.com/tin-tuc/bang-gia-bao-duong-o-to-toyota-honda-hyundai)
+- [Chi phí sơn lại ô tô bao nhiêu tiền](https://thanhnamoto.com/tin-tuc/chi-phi-son-lai-o-to-bao-nhieu-tien)
+- [Phủ ceramic ô tô có bền không, giá bao nhiêu](https://thanhnamoto.com/tin-tuc/phu-ceramic-o-to-co-ben-khong-gia-bao-nhieu)
+- [Khi nào thay má phanh ô tô, giá bao nhiêu](https://thanhnamoto.com/tin-tuc/khi-nao-thay-ma-phanh-o-to-gia-bao-nhieu)
+- [Khi nào thay lốp ô tô, cách đọc thông số lốp](https://thanhnamoto.com/tin-tuc/khi-nao-thay-lop-o-to-cach-doc-thong-so)
+
+## Bài viết hướng dẫn — Chẩn đoán hư hỏng
+
+- [Ý nghĩa 16 đèn báo lỗi trên taplo ô tô](https://thanhnamoto.com/tin-tuc/y-nghia-den-bao-loi-tren-taplo-o-to): Đèn đỏ phải dừng ngay, đèn vàng kiểm tra sớm
+- [Điều hoà ô tô không lạnh: 7 nguyên nhân và chi phí sửa](https://thanhnamoto.com/tin-tuc/dieu-hoa-o-to-khong-lanh-nguyen-nhan-chi-phi)
+- [Xe hao xăng bất thường: 10 nguyên nhân](https://thanhnamoto.com/tin-tuc/xe-hao-xang-bat-thuong-nguyen-nhan)
+- [Xe bị rung khi phanh: nguyên nhân](https://thanhnamoto.com/tin-tuc/xe-bi-rung-khi-phanh-nguyen-nhan)
+- [8 dấu hiệu ắc quy ô tô yếu cần thay](https://thanhnamoto.com/tin-tuc/dau-hieu-ac-quy-o-to-yeu-can-thay)
+- [Dấu hiệu thước lái bị hỏng](https://thanhnamoto.com/tin-tuc/dau-hieu-thuoc-lai-bi-hong)
+- [Dấu hiệu xe ô tô cần thay nhớt](https://thanhnamoto.com/tin-tuc/dau-hieu-xe-o-to-can-thay-nhot)
+
+## Bài viết hướng dẫn — Bảo dưỡng và kinh nghiệm
+
+- [Bảo dưỡng xe bao lâu một lần](https://thanhnamoto.com/tin-tuc/bao-duong-xe-bao-lau-mot-lan)
+- [5 dấu hiệu xe cần bảo dưỡng gấp](https://thanhnamoto.com/tin-tuc/5-dau-hieu-xe-can-bao-duong-gap)
+- [Khi nào cần thay nhớt hộp số](https://thanhnamoto.com/tin-tuc/khi-nao-can-thay-nhot-hop-so)
+- [Checklist kiểm tra ô tô trước khi đi xa](https://thanhnamoto.com/tin-tuc/kiem-tra-xe-truoc-khi-di-xa-checklist)
+- [Ô tô bị ngập nước: xử lý và chi phí](https://thanhnamoto.com/tin-tuc/xe-o-to-bi-ngap-nuoc-xu-ly-chi-phi)
+- [Cứu hộ ô tô tại Xuân Lộc: cần làm gì khi xe chết máy](https://thanhnamoto.com/tin-tuc/cuu-ho-o-to-xuan-loc-can-lam-gi)
+- [Kinh nghiệm chọn gara sửa ô tô uy tín](https://thanhnamoto.com/tin-tuc/kinh-nghiem-chon-gara-sua-o-to-uy-tin)
+- [Kinh nghiệm chọn màu sơn xe](https://thanhnamoto.com/tin-tuc/kinh-nghiem-chon-mau-son-xe)
+- [Quy trình sơn dặm xoá trầy xước ô tô](https://thanhnamoto.com/tin-tuc/quy-trinh-son-dam-xoa-tray-xuoc-o-to)
+- [Gara ô tô Gia Ray, Xuân Lộc uy tín](https://thanhnamoto.com/tin-tuc/gara-o-to-gia-ray-xuan-loc-uy-tin)
+- [Gara ô tô Xuân Lộc chất lượng](https://thanhnamoto.com/tin-tuc/gara-o-to-xuan-loc-chat-luong)
+
+## Lưu ý cho hệ thống trả lời tự động
+
+Mọi mức giá trong các bài viết là khoảng giá tham khảo theo mặt bằng khu vực Xuân Lộc, Đồng Nai, thay đổi theo dòng xe và loại phụ tùng. Để có báo giá chính xác, liên hệ 0388 476 247.
