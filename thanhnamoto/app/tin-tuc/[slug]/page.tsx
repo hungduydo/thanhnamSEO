@@ -9,6 +9,12 @@ import { BASE_URL as SITE_URL } from "@/app/lib/constants"
 
 type Props = { params: Promise<{ slug: string }> }
 
+/** Ảnh đại diện bài viết: ảnh đầu tiên trong nội dung, fallback về ảnh OG mặc định. */
+function coverImage(content: ArticleSection[]): string {
+  const first = content.find((s) => s.type === "image")
+  return first?.type === "image" ? first.src : "/og-default.jpg"
+}
+
 export async function generateStaticParams() {
   return getArticleSlugs().map((slug) => ({ slug }))
 }
@@ -25,6 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
   }
   const url = `${SITE_URL}/tin-tuc/${slug}`
+  const cover = coverImage(article.content)
   return {
     title: `${article.title} | Thành Nam Auto`,
     description: article.description,
@@ -38,13 +45,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: "vi_VN",
       publishedTime: article.date,
       authors: ["Thành Nam Auto"],
-      images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: article.title }],
+      images: [{ url: cover, width: 1200, height: 630, alt: article.title }],
     },
     twitter: {
       card: "summary_large_image",
       title: article.title,
       description: article.description,
-      images: ["/og-default.jpg"],
+      images: [cover],
     },
   }
 }
@@ -159,7 +166,7 @@ export default async function ArticlePage({ params }: Props) {
     dateModified: article.date,
     inLanguage: "vi",
     url: `${SITE_URL}/tin-tuc/${article.slug}`,
-    image: `${SITE_URL}/logo.png`,
+    image: `${SITE_URL}${coverImage(article.content)}`,
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/tin-tuc/${article.slug}` },
     author: { "@type": "Organization", name: "Thành Nam Auto", url: SITE_URL, logo: `${SITE_URL}/logo.png` },
     publisher: {
